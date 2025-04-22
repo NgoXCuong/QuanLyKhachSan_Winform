@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QuanLyKhachSan_WinForm.Models;
+using QuanLyKhachSan_WinForm.ViewModel;
 
 namespace QuanLyKhachSan_WinForm.Views
 {
     public partial class LoginForm : Form
     {
+        private TaiKhoanVM taiKhoanVM = new TaiKhoanVM();
         public LoginForm()
         {
             InitializeComponent();
@@ -20,6 +23,36 @@ namespace QuanLyKhachSan_WinForm.Views
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string user = txtUser.Text;
+            string password = txtPassword.Text;
+
+            if ((string.IsNullOrEmpty(user) || string.IsNullOrEmpty(password)))
+            {
+                MessageBox.Show("Vui lòng nhập tài khoản và mật khẩu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            List<TaiKhoanModel> listLogin =  taiKhoanVM.getTaiKhoanLogin();
+
+            bool isAuth = listLogin.Any(tk => 
+                tk.TenDangNhap.Equals(user, StringComparison.OrdinalIgnoreCase)
+                && tk.MatKhau == password);
+
+            if (isAuth)
+            {
+                this.Hide();
+                new HomeForm().Show();
+            } else
+            {
+                MessageBox.Show("Tài khoản hoặc mật khẩu không đúng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtUser.Clear();
+                txtPassword.Clear();
+                txtUser.Focus();
+            }
         }
     }
 }

@@ -77,6 +77,7 @@
             btnLogin.TabIndex = 4;
             btnLogin.Text = "Đăng nhập";
             btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
             // 
             // groupBox2
             // 
@@ -115,7 +116,7 @@
             groupBox1.Size = new Size(349, 61);
             groupBox1.TabIndex = 2;
             groupBox1.TabStop = false;
-            groupBox1.Text = "Email:";
+            groupBox1.Text = "Tài khoản:";
             // 
             // txtUser
             // 
