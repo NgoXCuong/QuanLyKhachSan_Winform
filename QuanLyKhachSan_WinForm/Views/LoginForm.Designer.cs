@@ -61,7 +61,7 @@
             panel1.Controls.Add(lbLogin);
             panel1.Controls.Add(panel2);
             panel1.Font = new Font("Segoe UI", 11F);
-            panel1.Location = new Point(150, 60);
+            panel1.Location = new Point(300, 150);
             panel1.Name = "panel1";
             panel1.Size = new Size(700, 450);
             panel1.TabIndex = 0;
@@ -188,11 +188,13 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MediumSeaGreen;
-            ClientSize = new Size(984, 561);
+            ClientSize = new Size(1284, 711);
             Controls.Add(panel1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "LoginForm";
+            Text = "Hệ thống quản lý khách sạn";
+            Load += LoginForm_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             groupBox2.ResumeLayout(false);

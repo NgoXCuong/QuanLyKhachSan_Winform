@@ -16,5 +16,11 @@ namespace QuanLyKhachSan_WinForm.Views
         {
             InitializeComponent();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new LoginForm().Show();
+        }
     }
 }

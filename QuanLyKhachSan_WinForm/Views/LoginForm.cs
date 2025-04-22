@@ -36,9 +36,9 @@ namespace QuanLyKhachSan_WinForm.Views
                 return;
             }
 
-            List<TaiKhoanModel> listLogin =  taiKhoanVM.getTaiKhoanLogin();
+            List<TaiKhoanModel> listLogin = taiKhoanVM.getTaiKhoanLogin();
 
-            bool isAuth = listLogin.Any(tk => 
+            bool isAuth = listLogin.Any(tk =>
                 tk.TenDangNhap.Equals(user, StringComparison.OrdinalIgnoreCase)
                 && tk.MatKhau == password);
 
@@ -46,13 +46,19 @@ namespace QuanLyKhachSan_WinForm.Views
             {
                 this.Hide();
                 new HomeForm().Show();
-            } else
+            }
+            else
             {
                 MessageBox.Show("Tài khoản hoặc mật khẩu không đúng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtUser.Clear();
                 txtPassword.Clear();
                 txtUser.Focus();
             }
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
