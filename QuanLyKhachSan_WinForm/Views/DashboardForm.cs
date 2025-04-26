@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyKhachSan_WinForm.Views
 {
-    public partial class DashboardForm : Form
+    public partial class DashBoardForm : Form
     {
-        public DashboardForm()
+        public DashBoardForm()
         {
             InitializeComponent();
         }

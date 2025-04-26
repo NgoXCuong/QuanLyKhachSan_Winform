@@ -1,6 +1,6 @@
 ﻿namespace QuanLyKhachSan_WinForm.Views
 {
-    partial class DashboardForm
+    partial class DashBoardForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,70 +30,52 @@
         {
             panel1 = new Panel();
             panel2 = new Panel();
-            panel3 = new Panel();
-            panel4 = new Panel();
-            panel5 = new Panel();
+            myUserControl1 = new MyUserControl();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
+            panel1.Controls.Add(myUserControl1);
+            panel1.Location = new Point(3, 253);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1144, 55);
+            panel1.Size = new Size(793, 195);
             panel1.TabIndex = 0;
             // 
             // panel2
             // 
-            panel2.Location = new Point(0, 61);
+            panel2.Location = new Point(3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(570, 292);
+            panel2.Size = new Size(793, 236);
             panel2.TabIndex = 1;
             // 
-            // panel3
+            // myUserControl1
             // 
-            panel3.Location = new Point(574, 61);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(570, 292);
-            panel3.TabIndex = 2;
+            myUserControl1.ChartTitle = "";
+            myUserControl1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Column;
+            myUserControl1.Location = new Point(9, 40);
+            myUserControl1.Name = "myUserControl1";
+            myUserControl1.SeriesName = "DefaultSeries";
+            myUserControl1.Size = new Size(753, 150);
+            myUserControl1.TabIndex = 0;
             // 
-            // panel4
+            // DashBoardForm
             // 
-            panel4.Location = new Point(0, 361);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(570, 292);
-            panel4.TabIndex = 3;
-            // 
-            // panel5
-            // 
-            panel5.Location = new Point(574, 361);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(570, 292);
-            panel5.TabIndex = 4;
-            // 
-            // DashboardForm
-            // 
-            AutoScaleDimensions = new SizeF(7F, 17F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1144, 656);
-            Controls.Add(panel5);
-            Controls.Add(panel4);
-            Controls.Add(panel3);
+            ClientSize = new Size(800, 450);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Font = new Font("Segoe UI", 10F);
-            Name = "DashboardForm";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "DashboardForm";
+            Name = "DashBoardForm";
+            Text = "DashBoardForm";
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel panel1;
+        private MyUserControl myUserControl1;
         private Panel panel2;
-        private Panel panel3;
-        private Panel panel4;
-        private Panel panel5;
     }
 }

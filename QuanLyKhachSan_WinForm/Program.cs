@@ -1,3 +1,5 @@
+using QuanLyKhachSan_WinForm.Views;
+
 namespace QuanLyKhachSan_WinForm
 {
     internal static class Program
@@ -11,7 +13,7 @@ namespace QuanLyKhachSan_WinForm
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Views.LoginForm());
+            Application.Run(new DashBoardForm());
         }
     }
 }
