@@ -32,7 +32,6 @@
             pTitle = new Panel();
             btnUserProfile = new Button();
             label1 = new Label();
-            pictureBox1 = new PictureBox();
             panel2 = new Panel();
             pExit = new Panel();
             pictureBox2 = new PictureBox();
@@ -50,8 +49,10 @@
             picPhong = new PictureBox();
             picHome = new PictureBox();
             btnHome = new Button();
+            lbAdmin = new Label();
+            lbDateTime = new Label();
+            pnPage = new Panel();
             pTitle.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             pExit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -67,9 +68,10 @@
             // pTitle
             // 
             pTitle.BackColor = Color.MediumSeaGreen;
+            pTitle.Controls.Add(lbDateTime);
+            pTitle.Controls.Add(lbAdmin);
             pTitle.Controls.Add(btnUserProfile);
             pTitle.Controls.Add(label1);
-            pTitle.Controls.Add(pictureBox1);
             pTitle.Dock = DockStyle.Top;
             pTitle.Location = new Point(0, 0);
             pTitle.Name = "pTitle";
@@ -80,11 +82,10 @@
             // 
             btnUserProfile.BackgroundImage = (Image)resources.GetObject("btnUserProfile.BackgroundImage");
             btnUserProfile.BackgroundImageLayout = ImageLayout.Center;
-            btnUserProfile.Dock = DockStyle.Right;
             btnUserProfile.ForeColor = Color.MediumSeaGreen;
-            btnUserProfile.Location = new Point(1239, 0);
+            btnUserProfile.Location = new Point(178, 11);
             btnUserProfile.Name = "btnUserProfile";
-            btnUserProfile.Size = new Size(45, 55);
+            btnUserProfile.Size = new Size(40, 36);
             btnUserProfile.TabIndex = 2;
             btnUserProfile.UseVisualStyleBackColor = true;
             // 
@@ -93,21 +94,11 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
             label1.ForeColor = SystemColors.ControlLightLight;
-            label1.Location = new Point(51, 9);
+            label1.Location = new Point(3, 11);
             label1.Name = "label1";
-            label1.Size = new Size(370, 37);
+            label1.Size = new Size(136, 37);
             label1.TabIndex = 1;
-            label1.Text = "Hệ thống quản lý khách sạn";
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
-            pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox1.Location = new Point(3, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(42, 46);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            label1.Text = "Xin chào!";
             // 
             // panel2
             // 
@@ -301,12 +292,43 @@
             btnHome.Text = "Trang chủ";
             btnHome.TextAlign = ContentAlignment.MiddleLeft;
             btnHome.UseVisualStyleBackColor = true;
+            btnHome.Click += btnHome_Click;
+            // 
+            // lbAdmin
+            // 
+            lbAdmin.AutoSize = true;
+            lbAdmin.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold);
+            lbAdmin.Location = new Point(224, 19);
+            lbAdmin.Name = "lbAdmin";
+            lbAdmin.Size = new Size(64, 23);
+            lbAdmin.TabIndex = 3;
+            lbAdmin.Text = "Admin";
+            // 
+            // lbDateTime
+            // 
+            lbDateTime.AutoSize = true;
+            lbDateTime.Font = new Font("Segoe UI", 11F);
+            lbDateTime.ForeColor = SystemColors.ButtonHighlight;
+            lbDateTime.Location = new Point(1135, 20);
+            lbDateTime.Name = "lbDateTime";
+            lbDateTime.Size = new Size(44, 20);
+            lbDateTime.TabIndex = 4;
+            lbDateTime.Text = "Ngày";
+            // 
+            // pnPage
+            // 
+            pnPage.Font = new Font("Segoe UI", 10F);
+            pnPage.Location = new Point(142, 57);
+            pnPage.Name = "pnPage";
+            pnPage.Size = new Size(1140, 650);
+            pnPage.TabIndex = 2;
             // 
             // HomeForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1284, 711);
+            Controls.Add(pnPage);
             Controls.Add(panel2);
             Controls.Add(pTitle);
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -315,7 +337,6 @@
             Text = "Hệ thống quản lý khách sạn";
             pTitle.ResumeLayout(false);
             pTitle.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);
             pExit.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -333,7 +354,6 @@
 
         private Panel pTitle;
         private Label label1;
-        private PictureBox pictureBox1;
         private Panel panel2;
         private Button btnUserProfile;
         private Panel pExit;
@@ -352,5 +372,8 @@
         private Button btnNhanVien;
         private PictureBox picDichVu;
         private PictureBox picKhachHang;
+        private Label lbAdmin;
+        private Label lbDateTime;
+        private Panel pnPage;
     }
 }
