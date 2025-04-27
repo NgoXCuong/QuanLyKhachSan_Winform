@@ -43,6 +43,7 @@
             btnExit = new Button();
             pictureBox1 = new PictureBox();
             imageList1 = new ImageList(components);
+            checkBoxHidePass = new CheckBox();
             panel1.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -55,6 +56,7 @@
             // panel1
             // 
             panel1.BackColor = SystemColors.Window;
+            panel1.Controls.Add(checkBoxHidePass);
             panel1.Controls.Add(btnLogin);
             panel1.Controls.Add(groupBox2);
             panel1.Controls.Add(groupBox1);
@@ -71,7 +73,7 @@
             btnLogin.BackColor = Color.DarkGreen;
             btnLogin.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnLogin.ForeColor = SystemColors.ControlLightLight;
-            btnLogin.Location = new Point(393, 273);
+            btnLogin.Location = new Point(392, 308);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(218, 44);
             btnLogin.TabIndex = 4;
@@ -183,6 +185,18 @@
             imageList1.ImageSize = new Size(16, 16);
             imageList1.TransparentColor = Color.Transparent;
             // 
+            // checkBoxHidePass
+            // 
+            checkBoxHidePass.AutoSize = true;
+            checkBoxHidePass.Font = new Font("Segoe UI", 10F);
+            checkBoxHidePass.Location = new Point(328, 266);
+            checkBoxHidePass.Name = "checkBoxHidePass";
+            checkBoxHidePass.Size = new Size(107, 23);
+            checkBoxHidePass.TabIndex = 5;
+            checkBoxHidePass.Text = "Ẩn mật khẩu";
+            checkBoxHidePass.UseVisualStyleBackColor = true;
+            checkBoxHidePass.CheckedChanged += checkBoxHidePass_CheckedChanged;
+            // 
             // LoginForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -223,5 +237,6 @@
         private TextBox txtPassword;
         private TextBox txtUser;
         private Button btnExit;
+        private CheckBox checkBoxHidePass;
     }
 }

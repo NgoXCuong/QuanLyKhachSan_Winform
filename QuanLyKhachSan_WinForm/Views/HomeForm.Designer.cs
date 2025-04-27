@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
             pTitle = new Panel();
+            lbDateTime = new Label();
+            lbAdmin = new Label();
             btnUserProfile = new Button();
             label1 = new Label();
             panel2 = new Panel();
@@ -49,9 +51,9 @@
             picPhong = new PictureBox();
             picHome = new PictureBox();
             btnHome = new Button();
-            lbAdmin = new Label();
-            lbDateTime = new Label();
             pnPage = new Panel();
+            btnThongKe = new Button();
+            picThongKe = new PictureBox();
             pTitle.SuspendLayout();
             panel2.SuspendLayout();
             pExit.SuspendLayout();
@@ -63,6 +65,7 @@
             ((System.ComponentModel.ISupportInitialize)picNhanVien).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picPhong).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picHome).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picThongKe).BeginInit();
             SuspendLayout();
             // 
             // pTitle
@@ -77,6 +80,27 @@
             pTitle.Name = "pTitle";
             pTitle.Size = new Size(1284, 55);
             pTitle.TabIndex = 0;
+            // 
+            // lbDateTime
+            // 
+            lbDateTime.AutoSize = true;
+            lbDateTime.Font = new Font("Segoe UI", 11F);
+            lbDateTime.ForeColor = SystemColors.ButtonHighlight;
+            lbDateTime.Location = new Point(1135, 20);
+            lbDateTime.Name = "lbDateTime";
+            lbDateTime.Size = new Size(44, 20);
+            lbDateTime.TabIndex = 4;
+            lbDateTime.Text = "Ngày";
+            // 
+            // lbAdmin
+            // 
+            lbAdmin.AutoSize = true;
+            lbAdmin.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold);
+            lbAdmin.Location = new Point(224, 19);
+            lbAdmin.Name = "lbAdmin";
+            lbAdmin.Size = new Size(64, 23);
+            lbAdmin.TabIndex = 3;
+            lbAdmin.Text = "Admin";
             // 
             // btnUserProfile
             // 
@@ -147,6 +171,8 @@
             // pMenu
             // 
             pMenu.BackColor = Color.MediumSeaGreen;
+            pMenu.Controls.Add(btnThongKe);
+            pMenu.Controls.Add(picThongKe);
             pMenu.Controls.Add(btnDichVu);
             pMenu.Controls.Add(btnKhachHang);
             pMenu.Controls.Add(btnHoaDon);
@@ -175,6 +201,7 @@
             btnDichVu.Text = "Dịch vụ";
             btnDichVu.TextAlign = ContentAlignment.MiddleLeft;
             btnDichVu.UseVisualStyleBackColor = true;
+            btnDichVu.Click += btnDichVu_Click;
             // 
             // btnKhachHang
             // 
@@ -186,6 +213,7 @@
             btnKhachHang.Text = "Khách hàng";
             btnKhachHang.TextAlign = ContentAlignment.MiddleLeft;
             btnKhachHang.UseVisualStyleBackColor = true;
+            btnKhachHang.Click += btnKhachHang_Click;
             // 
             // btnHoaDon
             // 
@@ -197,6 +225,7 @@
             btnHoaDon.Text = "Hóa đơn";
             btnHoaDon.TextAlign = ContentAlignment.MiddleLeft;
             btnHoaDon.UseVisualStyleBackColor = true;
+            btnHoaDon.Click += btnHoaDon_Click;
             // 
             // btnNhanVien
             // 
@@ -208,6 +237,7 @@
             btnNhanVien.Text = "Nhân viên";
             btnNhanVien.TextAlign = ContentAlignment.MiddleLeft;
             btnNhanVien.UseVisualStyleBackColor = true;
+            btnNhanVien.Click += btnNhanVien_Click;
             // 
             // picDichVu
             // 
@@ -239,6 +269,7 @@
             btnPhong.Text = "Phòng";
             btnPhong.TextAlign = ContentAlignment.MiddleLeft;
             btnPhong.UseVisualStyleBackColor = true;
+            btnPhong.Click += btnPhong_Click;
             // 
             // picHoaDon
             // 
@@ -294,27 +325,6 @@
             btnHome.UseVisualStyleBackColor = true;
             btnHome.Click += btnHome_Click;
             // 
-            // lbAdmin
-            // 
-            lbAdmin.AutoSize = true;
-            lbAdmin.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold);
-            lbAdmin.Location = new Point(224, 19);
-            lbAdmin.Name = "lbAdmin";
-            lbAdmin.Size = new Size(64, 23);
-            lbAdmin.TabIndex = 3;
-            lbAdmin.Text = "Admin";
-            // 
-            // lbDateTime
-            // 
-            lbDateTime.AutoSize = true;
-            lbDateTime.Font = new Font("Segoe UI", 11F);
-            lbDateTime.ForeColor = SystemColors.ButtonHighlight;
-            lbDateTime.Location = new Point(1135, 20);
-            lbDateTime.Name = "lbDateTime";
-            lbDateTime.Size = new Size(44, 20);
-            lbDateTime.TabIndex = 4;
-            lbDateTime.Text = "Ngày";
-            // 
             // pnPage
             // 
             pnPage.Font = new Font("Segoe UI", 10F);
@@ -322,6 +332,28 @@
             pnPage.Name = "pnPage";
             pnPage.Size = new Size(1140, 650);
             pnPage.TabIndex = 2;
+            // 
+            // btnThongKe
+            // 
+            btnThongKe.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnThongKe.Location = new Point(36, 275);
+            btnThongKe.Name = "btnThongKe";
+            btnThongKe.Size = new Size(100, 30);
+            btnThongKe.TabIndex = 13;
+            btnThongKe.Text = "Thống kê";
+            btnThongKe.TextAlign = ContentAlignment.MiddleLeft;
+            btnThongKe.UseVisualStyleBackColor = true;
+            btnThongKe.Click += btnThongKe_Click;
+            // 
+            // picThongKe
+            // 
+            picThongKe.BackgroundImage = (Image)resources.GetObject("picThongKe.BackgroundImage");
+            picThongKe.BackgroundImageLayout = ImageLayout.Center;
+            picThongKe.Location = new Point(5, 275);
+            picThongKe.Name = "picThongKe";
+            picThongKe.Size = new Size(30, 30);
+            picThongKe.TabIndex = 12;
+            picThongKe.TabStop = false;
             // 
             // HomeForm
             // 
@@ -335,6 +367,7 @@
             Name = "HomeForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Hệ thống quản lý khách sạn";
+            Load += HomeForm_Load;
             pTitle.ResumeLayout(false);
             pTitle.PerformLayout();
             panel2.ResumeLayout(false);
@@ -347,6 +380,7 @@
             ((System.ComponentModel.ISupportInitialize)picNhanVien).EndInit();
             ((System.ComponentModel.ISupportInitialize)picPhong).EndInit();
             ((System.ComponentModel.ISupportInitialize)picHome).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picThongKe).EndInit();
             ResumeLayout(false);
         }
 
@@ -375,5 +409,7 @@
         private Label lbAdmin;
         private Label lbDateTime;
         private Panel pnPage;
+        private Button btnThongKe;
+        private PictureBox picThongKe;
     }
 }

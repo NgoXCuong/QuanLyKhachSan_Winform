@@ -20,6 +20,12 @@ namespace QuanLyKhachSan_WinForm.Views
             InitializeComponent();
         }
 
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+            txtPassword.UseSystemPasswordChar = false;
+        }
+
+
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -44,8 +50,11 @@ namespace QuanLyKhachSan_WinForm.Views
 
             if (isAuth)
             {
+                //this.Hide();
+                //new HomeForm().Show();
                 this.Hide();
-                new HomeForm().Show();
+                HomeForm homeForm = new HomeForm(user); // TRUYỀN tên user vào HomeForm
+                homeForm.Show();
             }
             else
             {
@@ -56,9 +65,17 @@ namespace QuanLyKhachSan_WinForm.Views
             }
         }
 
-        private void LoginForm_Load(object sender, EventArgs e)
+        // Ân hiện mật khẩu
+        private void checkBoxHidePass_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (checkBoxHidePass.Checked)
+            {
+                txtPassword.UseSystemPasswordChar = true; // Ẩn mật khẩu thành ***
+            }
+            else
+            {
+                txtPassword.UseSystemPasswordChar = false; // Hiện mật khẩu ra bình thường
+            }
         }
     }
 }
