@@ -16,5 +16,10 @@ namespace QuanLyKhachSan_WinForm.Views
         {
             InitializeComponent();
         }
+
+        private void KhachHangForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
