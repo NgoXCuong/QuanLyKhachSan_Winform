@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            panel2 = new Panel();
             groupBox1 = new GroupBox();
+            btnTim = new Button();
+            btnExcel = new Button();
+            btnXoa = new Button();
+            btnSua = new Button();
+            btnThem = new Button();
+            txtTim = new TextBox();
+            txtGiaDichVu = new TextBox();
+            txtTenDichVu = new TextBox();
+            txtMaDichVu = new TextBox();
+            lbGiaDichVu = new Label();
+            lbTenDichVu = new Label();
+            lbMaDichVu = new Label();
+            panel2 = new Panel();
             groupBox2 = new GroupBox();
             dataGridView1 = new DataGridView();
-            lbMaDichVu = new Label();
-            lbTenDichVu = new Label();
-            lbGiaDichVu = new Label();
-            txtMaDichVu = new TextBox();
-            txtTenDichVu = new TextBox();
-            txtGiaDichVu = new TextBox();
-            txtTim = new TextBox();
-            btnThem = new Button();
-            btnSua = new Button();
-            btnXoa = new Button();
-            btnExcel = new Button();
-            btnTim = new Button();
             panel1.SuspendLayout();
-            panel2.SuspendLayout();
             groupBox1.SuspendLayout();
+            panel2.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -60,15 +60,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1124, 324);
             panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            panel2.Controls.Add(groupBox2);
-            panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(0, 330);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(1124, 281);
-            panel2.TabIndex = 1;
             // 
             // groupBox1
             // 
@@ -93,6 +84,116 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Thông tin dịch vụ";
             // 
+            // btnTim
+            // 
+            btnTim.Location = new Point(835, 235);
+            btnTim.Name = "btnTim";
+            btnTim.Size = new Size(80, 30);
+            btnTim.TabIndex = 11;
+            btnTim.Text = "Tìm";
+            btnTim.UseVisualStyleBackColor = true;
+            // 
+            // btnExcel
+            // 
+            btnExcel.Location = new Point(835, 189);
+            btnExcel.Name = "btnExcel";
+            btnExcel.Size = new Size(80, 30);
+            btnExcel.TabIndex = 10;
+            btnExcel.Text = "Xuất Excel";
+            btnExcel.UseVisualStyleBackColor = true;
+            // 
+            // btnXoa
+            // 
+            btnXoa.Location = new Point(835, 140);
+            btnXoa.Name = "btnXoa";
+            btnXoa.Size = new Size(80, 30);
+            btnXoa.TabIndex = 9;
+            btnXoa.Text = "Xóa";
+            btnXoa.UseVisualStyleBackColor = true;
+            // 
+            // btnSua
+            // 
+            btnSua.Location = new Point(835, 94);
+            btnSua.Name = "btnSua";
+            btnSua.Size = new Size(80, 30);
+            btnSua.TabIndex = 8;
+            btnSua.Text = "Sửa";
+            btnSua.UseVisualStyleBackColor = true;
+            // 
+            // btnThem
+            // 
+            btnThem.BackColor = Color.FromArgb(0, 192, 0);
+            btnThem.Location = new Point(835, 47);
+            btnThem.Name = "btnThem";
+            btnThem.Size = new Size(80, 30);
+            btnThem.TabIndex = 7;
+            btnThem.Text = "Thêm";
+            btnThem.UseVisualStyleBackColor = false;
+            // 
+            // txtTim
+            // 
+            txtTim.Location = new Point(648, 239);
+            txtTim.Name = "txtTim";
+            txtTim.Size = new Size(181, 25);
+            txtTim.TabIndex = 6;
+            // 
+            // txtGiaDichVu
+            // 
+            txtGiaDichVu.Location = new Point(160, 240);
+            txtGiaDichVu.Name = "txtGiaDichVu";
+            txtGiaDichVu.Size = new Size(352, 25);
+            txtGiaDichVu.TabIndex = 5;
+            // 
+            // txtTenDichVu
+            // 
+            txtTenDichVu.Location = new Point(160, 160);
+            txtTenDichVu.Name = "txtTenDichVu";
+            txtTenDichVu.Size = new Size(352, 25);
+            txtTenDichVu.TabIndex = 4;
+            // 
+            // txtMaDichVu
+            // 
+            txtMaDichVu.Location = new Point(160, 80);
+            txtMaDichVu.Name = "txtMaDichVu";
+            txtMaDichVu.Size = new Size(352, 25);
+            txtMaDichVu.TabIndex = 3;
+            // 
+            // lbGiaDichVu
+            // 
+            lbGiaDichVu.AutoSize = true;
+            lbGiaDichVu.Location = new Point(160, 210);
+            lbGiaDichVu.Name = "lbGiaDichVu";
+            lbGiaDichVu.Size = new Size(80, 19);
+            lbGiaDichVu.TabIndex = 2;
+            lbGiaDichVu.Text = "Giá dịch vụ:";
+            // 
+            // lbTenDichVu
+            // 
+            lbTenDichVu.AutoSize = true;
+            lbTenDichVu.Location = new Point(160, 130);
+            lbTenDichVu.Name = "lbTenDichVu";
+            lbTenDichVu.Size = new Size(81, 19);
+            lbTenDichVu.TabIndex = 1;
+            lbTenDichVu.Text = "Tên dịch vụ:";
+            // 
+            // lbMaDichVu
+            // 
+            lbMaDichVu.AutoSize = true;
+            lbMaDichVu.Location = new Point(160, 50);
+            lbMaDichVu.Name = "lbMaDichVu";
+            lbMaDichVu.Size = new Size(80, 19);
+            lbMaDichVu.TabIndex = 0;
+            lbMaDichVu.Text = "Mã dịch vụ:";
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(groupBox2);
+            panel2.Dock = DockStyle.Bottom;
+            panel2.Location = new Point(0, 330);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1124, 281);
+            panel2.TabIndex = 1;
+            // 
             // groupBox2
             // 
             groupBox2.BackColor = Color.White;
@@ -113,106 +214,6 @@
             dataGridView1.Size = new Size(1083, 236);
             dataGridView1.TabIndex = 0;
             // 
-            // lbMaDichVu
-            // 
-            lbMaDichVu.AutoSize = true;
-            lbMaDichVu.Location = new Point(160, 50);
-            lbMaDichVu.Name = "lbMaDichVu";
-            lbMaDichVu.Size = new Size(80, 19);
-            lbMaDichVu.TabIndex = 0;
-            lbMaDichVu.Text = "Mã dịch vụ:";
-            // 
-            // lbTenDichVu
-            // 
-            lbTenDichVu.AutoSize = true;
-            lbTenDichVu.Location = new Point(160, 130);
-            lbTenDichVu.Name = "lbTenDichVu";
-            lbTenDichVu.Size = new Size(81, 19);
-            lbTenDichVu.TabIndex = 1;
-            lbTenDichVu.Text = "Tên dịch vụ:";
-            // 
-            // lbGiaDichVu
-            // 
-            lbGiaDichVu.AutoSize = true;
-            lbGiaDichVu.Location = new Point(160, 210);
-            lbGiaDichVu.Name = "lbGiaDichVu";
-            lbGiaDichVu.Size = new Size(80, 19);
-            lbGiaDichVu.TabIndex = 2;
-            lbGiaDichVu.Text = "Giá dịch vụ:";
-            // 
-            // txtMaDichVu
-            // 
-            txtMaDichVu.Location = new Point(160, 80);
-            txtMaDichVu.Name = "txtMaDichVu";
-            txtMaDichVu.Size = new Size(352, 25);
-            txtMaDichVu.TabIndex = 3;
-            // 
-            // txtTenDichVu
-            // 
-            txtTenDichVu.Location = new Point(160, 160);
-            txtTenDichVu.Name = "txtTenDichVu";
-            txtTenDichVu.Size = new Size(352, 25);
-            txtTenDichVu.TabIndex = 4;
-            // 
-            // txtGiaDichVu
-            // 
-            txtGiaDichVu.Location = new Point(160, 240);
-            txtGiaDichVu.Name = "txtGiaDichVu";
-            txtGiaDichVu.Size = new Size(352, 25);
-            txtGiaDichVu.TabIndex = 5;
-            // 
-            // txtTim
-            // 
-            txtTim.Location = new Point(648, 239);
-            txtTim.Name = "txtTim";
-            txtTim.Size = new Size(181, 25);
-            txtTim.TabIndex = 6;
-            // 
-            // btnThem
-            // 
-            btnThem.Location = new Point(835, 47);
-            btnThem.Name = "btnThem";
-            btnThem.Size = new Size(80, 30);
-            btnThem.TabIndex = 7;
-            btnThem.Text = "Thêm";
-            btnThem.UseVisualStyleBackColor = true;
-            // 
-            // btnSua
-            // 
-            btnSua.Location = new Point(835, 94);
-            btnSua.Name = "btnSua";
-            btnSua.Size = new Size(80, 30);
-            btnSua.TabIndex = 8;
-            btnSua.Text = "Sửa";
-            btnSua.UseVisualStyleBackColor = true;
-            // 
-            // btnXoa
-            // 
-            btnXoa.Location = new Point(835, 140);
-            btnXoa.Name = "btnXoa";
-            btnXoa.Size = new Size(80, 30);
-            btnXoa.TabIndex = 9;
-            btnXoa.Text = "Xóa";
-            btnXoa.UseVisualStyleBackColor = true;
-            // 
-            // btnExcel
-            // 
-            btnExcel.Location = new Point(835, 189);
-            btnExcel.Name = "btnExcel";
-            btnExcel.Size = new Size(80, 30);
-            btnExcel.TabIndex = 10;
-            btnExcel.Text = "Xuất Excel";
-            btnExcel.UseVisualStyleBackColor = true;
-            // 
-            // btnTim
-            // 
-            btnTim.Location = new Point(835, 235);
-            btnTim.Name = "btnTim";
-            btnTim.Size = new Size(80, 30);
-            btnTim.TabIndex = 11;
-            btnTim.Text = "Tìm";
-            btnTim.UseVisualStyleBackColor = true;
-            // 
             // DichVuForm
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
@@ -226,9 +227,9 @@
             StartPosition = FormStartPosition.CenterParent;
             Text = "DichVuForm";
             panel1.ResumeLayout(false);
-            panel2.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            panel2.ResumeLayout(false);
             groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);

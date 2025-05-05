@@ -94,6 +94,7 @@
             // 
             // textBox6
             // 
+            textBox6.BorderStyle = BorderStyle.FixedSingle;
             textBox6.Location = new Point(679, 299);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(216, 27);
@@ -101,6 +102,7 @@
             // 
             // textBox5
             // 
+            textBox5.BorderStyle = BorderStyle.FixedSingle;
             textBox5.Location = new Point(454, 170);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(288, 27);
@@ -108,6 +110,7 @@
             // 
             // textBox4
             // 
+            textBox4.BorderStyle = BorderStyle.FixedSingle;
             textBox4.Location = new Point(454, 71);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(288, 27);
@@ -115,6 +118,7 @@
             // 
             // textBox3
             // 
+            textBox3.BorderStyle = BorderStyle.FixedSingle;
             textBox3.Location = new Point(30, 260);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(289, 27);
@@ -122,6 +126,7 @@
             // 
             // textBox2
             // 
+            textBox2.BorderStyle = BorderStyle.FixedSingle;
             textBox2.Location = new Point(31, 170);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(288, 27);
@@ -129,6 +134,7 @@
             // 
             // textBox1
             // 
+            textBox1.BorderStyle = BorderStyle.FixedSingle;
             textBox1.Location = new Point(30, 71);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(289, 27);
@@ -136,48 +142,53 @@
             // 
             // btnTim
             // 
+            btnTim.BackColor = Color.FromArgb(255, 128, 0);
             btnTim.Location = new Point(910, 299);
             btnTim.Name = "btnTim";
             btnTim.Size = new Size(80, 30);
             btnTim.TabIndex = 9;
             btnTim.Text = "Tìm";
-            btnTim.UseVisualStyleBackColor = true;
+            btnTim.UseVisualStyleBackColor = false;
             // 
             // btnExcel
             // 
+            btnExcel.BackColor = Color.LimeGreen;
             btnExcel.Location = new Point(910, 238);
             btnExcel.Name = "btnExcel";
             btnExcel.Size = new Size(80, 30);
             btnExcel.TabIndex = 8;
             btnExcel.Text = "Xuất Excel";
-            btnExcel.UseVisualStyleBackColor = true;
+            btnExcel.UseVisualStyleBackColor = false;
             // 
             // btnXoa
             // 
+            btnXoa.BackColor = Color.OrangeRed;
             btnXoa.Location = new Point(910, 179);
             btnXoa.Name = "btnXoa";
             btnXoa.Size = new Size(80, 30);
             btnXoa.TabIndex = 7;
             btnXoa.Text = "Xóa";
-            btnXoa.UseVisualStyleBackColor = true;
+            btnXoa.UseVisualStyleBackColor = false;
             // 
             // btnSua
             // 
+            btnSua.BackColor = Color.DodgerBlue;
             btnSua.Location = new Point(910, 119);
             btnSua.Name = "btnSua";
             btnSua.Size = new Size(80, 30);
             btnSua.TabIndex = 6;
             btnSua.Text = "Sửa";
-            btnSua.UseVisualStyleBackColor = true;
+            btnSua.UseVisualStyleBackColor = false;
             // 
             // btnThem
             // 
+            btnThem.BackColor = Color.LightSeaGreen;
             btnThem.Location = new Point(910, 60);
             btnThem.Name = "btnThem";
             btnThem.Size = new Size(80, 30);
             btnThem.TabIndex = 5;
             btnThem.Text = "Thêm";
-            btnThem.UseVisualStyleBackColor = true;
+            btnThem.UseVisualStyleBackColor = false;
             // 
             // label5
             // 

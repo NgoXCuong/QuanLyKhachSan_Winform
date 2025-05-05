@@ -29,31 +29,31 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            panel2 = new Panel();
             groupBox1 = new GroupBox();
-            groupBox2 = new GroupBox();
-            lbMaKhachHang = new Label();
-            lbTenKhachHang = new Label();
-            lbCCCD = new Label();
-            lbSDT = new Label();
-            lbEmail = new Label();
-            lbDiaChi = new Label();
-            txtMaKhachHang = new TextBox();
-            txtTenKhachHang = new TextBox();
-            txtCCCD = new TextBox();
-            txtSDT = new TextBox();
-            txtEmail = new TextBox();
-            txtDiaChi = new TextBox();
-            txtTim = new TextBox();
-            btnThem = new Button();
-            btnSua = new Button();
-            btnXoa = new Button();
-            btnExcel = new Button();
             btnTim = new Button();
+            btnExcel = new Button();
+            btnXoa = new Button();
+            btnSua = new Button();
+            btnThem = new Button();
+            txtTim = new TextBox();
+            txtDiaChi = new TextBox();
+            txtEmail = new TextBox();
+            txtSDT = new TextBox();
+            txtCCCD = new TextBox();
+            txtTenKhachHang = new TextBox();
+            txtMaKhachHang = new TextBox();
+            lbDiaChi = new Label();
+            lbEmail = new Label();
+            lbSDT = new Label();
+            lbCCCD = new Label();
+            lbTenKhachHang = new Label();
+            lbMaKhachHang = new Label();
+            panel2 = new Panel();
+            groupBox2 = new GroupBox();
             dgvListKhachHang = new DataGridView();
             panel1.SuspendLayout();
-            panel2.SuspendLayout();
             groupBox1.SuspendLayout();
+            panel2.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvListKhachHang).BeginInit();
             SuspendLayout();
@@ -66,15 +66,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1124, 337);
             panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            panel2.Controls.Add(groupBox2);
-            panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(0, 343);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(1124, 268);
-            panel2.TabIndex = 1;
             // 
             // groupBox1
             // 
@@ -104,61 +95,111 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Thông tin khách hàng";
             // 
-            // groupBox2
+            // btnTim
             // 
-            groupBox2.BackColor = Color.White;
-            groupBox2.Controls.Add(dgvListKhachHang);
-            groupBox2.Location = new Point(12, 11);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(1100, 245);
-            groupBox2.TabIndex = 0;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Danh sách khách hàng";
+            btnTim.BackColor = Color.FromArgb(255, 128, 0);
+            btnTim.Location = new Point(925, 250);
+            btnTim.Name = "btnTim";
+            btnTim.Size = new Size(80, 30);
+            btnTim.TabIndex = 17;
+            btnTim.Text = "Tìm";
+            btnTim.UseVisualStyleBackColor = false;
             // 
-            // lbMaKhachHang
+            // btnExcel
             // 
-            lbMaKhachHang.AutoSize = true;
-            lbMaKhachHang.Location = new Point(40, 40);
-            lbMaKhachHang.Name = "lbMaKhachHang";
-            lbMaKhachHang.Size = new Size(107, 19);
-            lbMaKhachHang.TabIndex = 0;
-            lbMaKhachHang.Text = "Mã khách hàng:";
+            btnExcel.BackColor = Color.LimeGreen;
+            btnExcel.Location = new Point(925, 200);
+            btnExcel.Name = "btnExcel";
+            btnExcel.Size = new Size(80, 30);
+            btnExcel.TabIndex = 16;
+            btnExcel.Text = "Xuất Excel";
+            btnExcel.UseVisualStyleBackColor = false;
             // 
-            // lbTenKhachHang
+            // btnXoa
             // 
-            lbTenKhachHang.AutoSize = true;
-            lbTenKhachHang.Location = new Point(40, 130);
-            lbTenKhachHang.Name = "lbTenKhachHang";
-            lbTenKhachHang.Size = new Size(108, 19);
-            lbTenKhachHang.TabIndex = 1;
-            lbTenKhachHang.Text = "Tên khách hàng:";
+            btnXoa.BackColor = Color.OrangeRed;
+            btnXoa.Location = new Point(925, 150);
+            btnXoa.Name = "btnXoa";
+            btnXoa.Size = new Size(80, 30);
+            btnXoa.TabIndex = 15;
+            btnXoa.Text = "Xóa";
+            btnXoa.UseVisualStyleBackColor = false;
             // 
-            // lbCCCD
+            // btnSua
             // 
-            lbCCCD.AutoSize = true;
-            lbCCCD.Location = new Point(40, 220);
-            lbCCCD.Name = "lbCCCD";
-            lbCCCD.Size = new Size(100, 19);
-            lbCCCD.TabIndex = 2;
-            lbCCCD.Text = "CCCD/ CMND:";
+            btnSua.BackColor = Color.DodgerBlue;
+            btnSua.Location = new Point(925, 100);
+            btnSua.Name = "btnSua";
+            btnSua.Size = new Size(80, 30);
+            btnSua.TabIndex = 14;
+            btnSua.Text = "Sửa";
+            btnSua.UseVisualStyleBackColor = false;
             // 
-            // lbSDT
+            // btnThem
             // 
-            lbSDT.AutoSize = true;
-            lbSDT.Location = new Point(380, 40);
-            lbSDT.Name = "lbSDT";
-            lbSDT.Size = new Size(92, 19);
-            lbSDT.TabIndex = 3;
-            lbSDT.Text = "Số điện thoại:";
+            btnThem.BackColor = Color.LightSeaGreen;
+            btnThem.Location = new Point(925, 50);
+            btnThem.Name = "btnThem";
+            btnThem.Size = new Size(80, 30);
+            btnThem.TabIndex = 13;
+            btnThem.Text = "Thêm";
+            btnThem.UseVisualStyleBackColor = false;
             // 
-            // lbEmail
+            // txtTim
             // 
-            lbEmail.AutoSize = true;
-            lbEmail.Location = new Point(380, 130);
-            lbEmail.Name = "lbEmail";
-            lbEmail.Size = new Size(44, 19);
-            lbEmail.TabIndex = 4;
-            lbEmail.Text = "Email:";
+            txtTim.BorderStyle = BorderStyle.FixedSingle;
+            txtTim.Location = new Point(733, 250);
+            txtTim.Name = "txtTim";
+            txtTim.Size = new Size(170, 25);
+            txtTim.TabIndex = 12;
+            // 
+            // txtDiaChi
+            // 
+            txtDiaChi.BorderStyle = BorderStyle.FixedSingle;
+            txtDiaChi.Location = new Point(380, 250);
+            txtDiaChi.Name = "txtDiaChi";
+            txtDiaChi.Size = new Size(200, 25);
+            txtDiaChi.TabIndex = 11;
+            // 
+            // txtEmail
+            // 
+            txtEmail.BorderStyle = BorderStyle.FixedSingle;
+            txtEmail.Location = new Point(380, 160);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(200, 25);
+            txtEmail.TabIndex = 10;
+            // 
+            // txtSDT
+            // 
+            txtSDT.BorderStyle = BorderStyle.FixedSingle;
+            txtSDT.Location = new Point(380, 70);
+            txtSDT.Name = "txtSDT";
+            txtSDT.Size = new Size(200, 25);
+            txtSDT.TabIndex = 9;
+            // 
+            // txtCCCD
+            // 
+            txtCCCD.BorderStyle = BorderStyle.FixedSingle;
+            txtCCCD.Location = new Point(40, 250);
+            txtCCCD.Name = "txtCCCD";
+            txtCCCD.Size = new Size(200, 25);
+            txtCCCD.TabIndex = 8;
+            // 
+            // txtTenKhachHang
+            // 
+            txtTenKhachHang.BorderStyle = BorderStyle.FixedSingle;
+            txtTenKhachHang.Location = new Point(40, 160);
+            txtTenKhachHang.Name = "txtTenKhachHang";
+            txtTenKhachHang.Size = new Size(200, 25);
+            txtTenKhachHang.TabIndex = 7;
+            // 
+            // txtMaKhachHang
+            // 
+            txtMaKhachHang.BorderStyle = BorderStyle.FixedSingle;
+            txtMaKhachHang.Location = new Point(40, 70);
+            txtMaKhachHang.Name = "txtMaKhachHang";
+            txtMaKhachHang.Size = new Size(200, 25);
+            txtMaKhachHang.TabIndex = 6;
             // 
             // lbDiaChi
             // 
@@ -169,99 +210,70 @@
             lbDiaChi.TabIndex = 5;
             lbDiaChi.Text = "Địa chỉ:";
             // 
-            // txtMaKhachHang
+            // lbEmail
             // 
-            txtMaKhachHang.Location = new Point(40, 70);
-            txtMaKhachHang.Name = "txtMaKhachHang";
-            txtMaKhachHang.Size = new Size(200, 25);
-            txtMaKhachHang.TabIndex = 6;
+            lbEmail.AutoSize = true;
+            lbEmail.Location = new Point(380, 130);
+            lbEmail.Name = "lbEmail";
+            lbEmail.Size = new Size(44, 19);
+            lbEmail.TabIndex = 4;
+            lbEmail.Text = "Email:";
             // 
-            // txtTenKhachHang
+            // lbSDT
             // 
-            txtTenKhachHang.Location = new Point(40, 160);
-            txtTenKhachHang.Name = "txtTenKhachHang";
-            txtTenKhachHang.Size = new Size(200, 25);
-            txtTenKhachHang.TabIndex = 7;
+            lbSDT.AutoSize = true;
+            lbSDT.Location = new Point(380, 40);
+            lbSDT.Name = "lbSDT";
+            lbSDT.Size = new Size(92, 19);
+            lbSDT.TabIndex = 3;
+            lbSDT.Text = "Số điện thoại:";
             // 
-            // txtCCCD
+            // lbCCCD
             // 
-            txtCCCD.Location = new Point(40, 250);
-            txtCCCD.Name = "txtCCCD";
-            txtCCCD.Size = new Size(200, 25);
-            txtCCCD.TabIndex = 8;
+            lbCCCD.AutoSize = true;
+            lbCCCD.Location = new Point(40, 220);
+            lbCCCD.Name = "lbCCCD";
+            lbCCCD.Size = new Size(100, 19);
+            lbCCCD.TabIndex = 2;
+            lbCCCD.Text = "CCCD/ CMND:";
             // 
-            // txtSDT
+            // lbTenKhachHang
             // 
-            txtSDT.Location = new Point(380, 70);
-            txtSDT.Name = "txtSDT";
-            txtSDT.Size = new Size(200, 25);
-            txtSDT.TabIndex = 9;
+            lbTenKhachHang.AutoSize = true;
+            lbTenKhachHang.Location = new Point(40, 130);
+            lbTenKhachHang.Name = "lbTenKhachHang";
+            lbTenKhachHang.Size = new Size(108, 19);
+            lbTenKhachHang.TabIndex = 1;
+            lbTenKhachHang.Text = "Tên khách hàng:";
             // 
-            // txtEmail
+            // lbMaKhachHang
             // 
-            txtEmail.Location = new Point(380, 160);
-            txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(200, 25);
-            txtEmail.TabIndex = 10;
+            lbMaKhachHang.AutoSize = true;
+            lbMaKhachHang.Location = new Point(40, 40);
+            lbMaKhachHang.Name = "lbMaKhachHang";
+            lbMaKhachHang.Size = new Size(107, 19);
+            lbMaKhachHang.TabIndex = 0;
+            lbMaKhachHang.Text = "Mã khách hàng:";
             // 
-            // txtDiaChi
+            // panel2
             // 
-            txtDiaChi.Location = new Point(380, 250);
-            txtDiaChi.Name = "txtDiaChi";
-            txtDiaChi.Size = new Size(200, 25);
-            txtDiaChi.TabIndex = 11;
+            panel2.Controls.Add(groupBox2);
+            panel2.Dock = DockStyle.Bottom;
+            panel2.Location = new Point(0, 343);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1124, 268);
+            panel2.TabIndex = 1;
             // 
-            // txtTim
+            // groupBox2
             // 
-            txtTim.Location = new Point(733, 250);
-            txtTim.Name = "txtTim";
-            txtTim.Size = new Size(170, 25);
-            txtTim.TabIndex = 12;
-            // 
-            // btnThem
-            // 
-            btnThem.Location = new Point(925, 50);
-            btnThem.Name = "btnThem";
-            btnThem.Size = new Size(80, 30);
-            btnThem.TabIndex = 13;
-            btnThem.Text = "Thêm";
-            btnThem.UseVisualStyleBackColor = true;
-            // 
-            // btnSua
-            // 
-            btnSua.Location = new Point(925, 100);
-            btnSua.Name = "btnSua";
-            btnSua.Size = new Size(80, 30);
-            btnSua.TabIndex = 14;
-            btnSua.Text = "Sửa";
-            btnSua.UseVisualStyleBackColor = true;
-            // 
-            // btnXoa
-            // 
-            btnXoa.Location = new Point(925, 150);
-            btnXoa.Name = "btnXoa";
-            btnXoa.Size = new Size(80, 30);
-            btnXoa.TabIndex = 15;
-            btnXoa.Text = "Xóa";
-            btnXoa.UseVisualStyleBackColor = true;
-            // 
-            // btnExcel
-            // 
-            btnExcel.Location = new Point(925, 200);
-            btnExcel.Name = "btnExcel";
-            btnExcel.Size = new Size(80, 30);
-            btnExcel.TabIndex = 16;
-            btnExcel.Text = "Xuất Excel";
-            btnExcel.UseVisualStyleBackColor = true;
-            // 
-            // btnTim
-            // 
-            btnTim.Location = new Point(925, 250);
-            btnTim.Name = "btnTim";
-            btnTim.Size = new Size(80, 30);
-            btnTim.TabIndex = 17;
-            btnTim.Text = "Tìm";
-            btnTim.UseVisualStyleBackColor = true;
+            groupBox2.BackColor = Color.White;
+            groupBox2.Controls.Add(dgvListKhachHang);
+            groupBox2.Location = new Point(12, 11);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(1100, 245);
+            groupBox2.TabIndex = 0;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Danh sách khách hàng";
             // 
             // dgvListKhachHang
             // 
@@ -285,9 +297,9 @@
             Text = "KhachHangForm";
             Load += KhachHangForm_Load;
             panel1.ResumeLayout(false);
-            panel2.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            panel2.ResumeLayout(false);
             groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgvListKhachHang).EndInit();
             ResumeLayout(false);
