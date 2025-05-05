@@ -109,6 +109,7 @@
             // 
             // txtTim
             // 
+            txtTim.BorderStyle = BorderStyle.FixedSingle;
             txtTim.Location = new Point(764, 247);
             txtTim.Name = "txtTim";
             txtTim.Size = new Size(180, 27);
@@ -116,6 +117,7 @@
             // 
             // txtTrangThai
             // 
+            txtTrangThai.BorderStyle = BorderStyle.FixedSingle;
             txtTrangThai.Location = new Point(417, 138);
             txtTrangThai.Name = "txtTrangThai";
             txtTrangThai.Size = new Size(225, 27);
@@ -123,6 +125,7 @@
             // 
             // txtDonGia
             // 
+            txtDonGia.BorderStyle = BorderStyle.FixedSingle;
             txtDonGia.Location = new Point(417, 67);
             txtDonGia.Name = "txtDonGia";
             txtDonGia.Size = new Size(225, 27);
@@ -130,6 +133,7 @@
             // 
             // txtLoaiPhong
             // 
+            txtLoaiPhong.BorderStyle = BorderStyle.FixedSingle;
             txtLoaiPhong.Location = new Point(27, 209);
             txtLoaiPhong.Name = "txtLoaiPhong";
             txtLoaiPhong.Size = new Size(225, 27);
@@ -137,6 +141,7 @@
             // 
             // txtSoPhong
             // 
+            txtSoPhong.BorderStyle = BorderStyle.FixedSingle;
             txtSoPhong.Location = new Point(26, 138);
             txtSoPhong.Name = "txtSoPhong";
             txtSoPhong.Size = new Size(225, 27);
@@ -144,6 +149,7 @@
             // 
             // txtMaPhong
             // 
+            txtMaPhong.BorderStyle = BorderStyle.FixedSingle;
             txtMaPhong.Location = new Point(27, 67);
             txtMaPhong.Name = "txtMaPhong";
             txtMaPhong.Size = new Size(225, 27);
@@ -151,6 +157,7 @@
             // 
             // rtbMoTa
             // 
+            rtbMoTa.BorderStyle = BorderStyle.FixedSingle;
             rtbMoTa.Location = new Point(417, 209);
             rtbMoTa.Name = "rtbMoTa";
             rtbMoTa.Size = new Size(225, 64);

@@ -86,43 +86,47 @@
             // 
             // btnTim
             // 
+            btnTim.BackColor = Color.FromArgb(255, 128, 0);
             btnTim.Location = new Point(835, 235);
             btnTim.Name = "btnTim";
             btnTim.Size = new Size(80, 30);
             btnTim.TabIndex = 11;
             btnTim.Text = "Tìm";
-            btnTim.UseVisualStyleBackColor = true;
+            btnTim.UseVisualStyleBackColor = false;
             // 
             // btnExcel
             // 
+            btnExcel.BackColor = Color.LimeGreen;
             btnExcel.Location = new Point(835, 189);
             btnExcel.Name = "btnExcel";
             btnExcel.Size = new Size(80, 30);
             btnExcel.TabIndex = 10;
             btnExcel.Text = "Xuất Excel";
-            btnExcel.UseVisualStyleBackColor = true;
+            btnExcel.UseVisualStyleBackColor = false;
             // 
             // btnXoa
             // 
+            btnXoa.BackColor = Color.OrangeRed;
             btnXoa.Location = new Point(835, 140);
             btnXoa.Name = "btnXoa";
             btnXoa.Size = new Size(80, 30);
             btnXoa.TabIndex = 9;
             btnXoa.Text = "Xóa";
-            btnXoa.UseVisualStyleBackColor = true;
+            btnXoa.UseVisualStyleBackColor = false;
             // 
             // btnSua
             // 
+            btnSua.BackColor = Color.DodgerBlue;
             btnSua.Location = new Point(835, 94);
             btnSua.Name = "btnSua";
             btnSua.Size = new Size(80, 30);
             btnSua.TabIndex = 8;
             btnSua.Text = "Sửa";
-            btnSua.UseVisualStyleBackColor = true;
+            btnSua.UseVisualStyleBackColor = false;
             // 
             // btnThem
             // 
-            btnThem.BackColor = Color.FromArgb(0, 192, 0);
+            btnThem.BackColor = Color.LightSeaGreen;
             btnThem.Location = new Point(835, 47);
             btnThem.Name = "btnThem";
             btnThem.Size = new Size(80, 30);
@@ -132,6 +136,7 @@
             // 
             // txtTim
             // 
+            txtTim.BorderStyle = BorderStyle.FixedSingle;
             txtTim.Location = new Point(648, 239);
             txtTim.Name = "txtTim";
             txtTim.Size = new Size(181, 25);
@@ -139,6 +144,7 @@
             // 
             // txtGiaDichVu
             // 
+            txtGiaDichVu.BorderStyle = BorderStyle.FixedSingle;
             txtGiaDichVu.Location = new Point(160, 240);
             txtGiaDichVu.Name = "txtGiaDichVu";
             txtGiaDichVu.Size = new Size(352, 25);
@@ -146,6 +152,7 @@
             // 
             // txtTenDichVu
             // 
+            txtTenDichVu.BorderStyle = BorderStyle.FixedSingle;
             txtTenDichVu.Location = new Point(160, 160);
             txtTenDichVu.Name = "txtTenDichVu";
             txtTenDichVu.Size = new Size(352, 25);
@@ -153,6 +160,7 @@
             // 
             // txtMaDichVu
             // 
+            txtMaDichVu.BorderStyle = BorderStyle.FixedSingle;
             txtMaDichVu.Location = new Point(160, 80);
             txtMaDichVu.Name = "txtMaDichVu";
             txtMaDichVu.Size = new Size(352, 25);
