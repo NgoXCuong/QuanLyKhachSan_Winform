@@ -64,7 +64,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1124, 337);
+            panel1.Size = new Size(1124, 335);
             panel1.TabIndex = 0;
             // 
             // groupBox1
@@ -90,7 +90,7 @@
             groupBox1.Controls.Add(lbMaKhachHang);
             groupBox1.Location = new Point(12, 7);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(1100, 327);
+            groupBox1.Size = new Size(1100, 320);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Thông tin khách hàng";
@@ -259,9 +259,9 @@
             // 
             panel2.Controls.Add(groupBox2);
             panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(0, 343);
+            panel2.Location = new Point(0, 341);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1124, 268);
+            panel2.Size = new Size(1124, 270);
             panel2.TabIndex = 1;
             // 
             // groupBox2
@@ -270,7 +270,7 @@
             groupBox2.Controls.Add(dgvListKhachHang);
             groupBox2.Location = new Point(12, 11);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(1100, 245);
+            groupBox2.Size = new Size(1100, 247);
             groupBox2.TabIndex = 0;
             groupBox2.TabStop = false;
             groupBox2.Text = "Danh sách khách hàng";
@@ -280,7 +280,7 @@
             dgvListKhachHang.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvListKhachHang.Location = new Point(17, 24);
             dgvListKhachHang.Name = "dgvListKhachHang";
-            dgvListKhachHang.Size = new Size(1066, 215);
+            dgvListKhachHang.Size = new Size(1066, 217);
             dgvListKhachHang.TabIndex = 0;
             // 
             // KhachHangForm

@@ -62,7 +62,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1124, 370);
+            panel1.Size = new Size(1124, 335);
             panel1.TabIndex = 0;
             // 
             // groupBox1
@@ -87,7 +87,7 @@
             groupBox1.Font = new Font("Segoe UI", 11F);
             groupBox1.Location = new Point(12, 7);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(1100, 356);
+            groupBox1.Size = new Size(1100, 316);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Thông tin nhân viên";
@@ -95,7 +95,7 @@
             // textBox6
             // 
             textBox6.BorderStyle = BorderStyle.FixedSingle;
-            textBox6.Location = new Point(679, 299);
+            textBox6.Location = new Point(683, 265);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(216, 27);
             textBox6.TabIndex = 15;
@@ -143,7 +143,7 @@
             // btnTim
             // 
             btnTim.BackColor = Color.FromArgb(255, 128, 0);
-            btnTim.Location = new Point(910, 299);
+            btnTim.Location = new Point(914, 265);
             btnTim.Name = "btnTim";
             btnTim.Size = new Size(80, 30);
             btnTim.TabIndex = 9;
@@ -153,7 +153,7 @@
             // btnExcel
             // 
             btnExcel.BackColor = Color.LimeGreen;
-            btnExcel.Location = new Point(910, 238);
+            btnExcel.Location = new Point(914, 204);
             btnExcel.Name = "btnExcel";
             btnExcel.Size = new Size(80, 30);
             btnExcel.TabIndex = 8;
@@ -163,7 +163,7 @@
             // btnXoa
             // 
             btnXoa.BackColor = Color.OrangeRed;
-            btnXoa.Location = new Point(910, 179);
+            btnXoa.Location = new Point(914, 145);
             btnXoa.Name = "btnXoa";
             btnXoa.Size = new Size(80, 30);
             btnXoa.TabIndex = 7;
@@ -173,7 +173,7 @@
             // btnSua
             // 
             btnSua.BackColor = Color.DodgerBlue;
-            btnSua.Location = new Point(910, 119);
+            btnSua.Location = new Point(914, 85);
             btnSua.Name = "btnSua";
             btnSua.Size = new Size(80, 30);
             btnSua.TabIndex = 6;
@@ -183,7 +183,7 @@
             // btnThem
             // 
             btnThem.BackColor = Color.LightSeaGreen;
-            btnThem.Location = new Point(910, 60);
+            btnThem.Location = new Point(914, 26);
             btnThem.Name = "btnThem";
             btnThem.Size = new Size(80, 30);
             btnThem.TabIndex = 5;
@@ -240,9 +240,9 @@
             panel2.Controls.Add(groupBox2);
             panel2.Dock = DockStyle.Bottom;
             panel2.Font = new Font("Segoe UI", 11F);
-            panel2.Location = new Point(0, 376);
+            panel2.Location = new Point(0, 341);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1124, 235);
+            panel2.Size = new Size(1124, 270);
             panel2.TabIndex = 1;
             // 
             // groupBox2
@@ -251,7 +251,7 @@
             groupBox2.Controls.Add(dgvListNhanVien);
             groupBox2.Location = new Point(11, 3);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(1101, 229);
+            groupBox2.Size = new Size(1101, 255);
             groupBox2.TabIndex = 0;
             groupBox2.TabStop = false;
             groupBox2.Text = "Danh sách nhân viên";
@@ -262,7 +262,7 @@
             dgvListNhanVien.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvListNhanVien.Location = new Point(6, 26);
             dgvListNhanVien.Name = "dgvListNhanVien";
-            dgvListNhanVien.Size = new Size(1089, 197);
+            dgvListNhanVien.Size = new Size(1089, 223);
             dgvListNhanVien.TabIndex = 0;
             // 
             // NhanVienForm

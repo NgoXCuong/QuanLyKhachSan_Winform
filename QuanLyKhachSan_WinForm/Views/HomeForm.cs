@@ -25,6 +25,7 @@ namespace QuanLyKhachSan_WinForm.Views
             userName = username;
         }
 
+
         private void HomeForm_Load(object sender, EventArgs e)
         {
             lbDateTime.Text = DateTime.Now.ToString("dddd, dd/MM/yyyy");

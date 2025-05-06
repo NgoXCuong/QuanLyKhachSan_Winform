@@ -68,7 +68,7 @@
             panel1.Font = new Font("Segoe UI", 11F);
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1124, 361);
+            panel1.Size = new Size(1124, 335);
             panel1.TabIndex = 0;
             // 
             // dataGridView1
@@ -102,7 +102,7 @@
             gbNhapPhong.Controls.Add(lbMaPhong);
             gbNhapPhong.Location = new Point(12, 3);
             gbNhapPhong.Name = "gbNhapPhong";
-            gbNhapPhong.Size = new Size(1100, 303);
+            gbNhapPhong.Size = new Size(1100, 318);
             gbNhapPhong.TabIndex = 0;
             gbNhapPhong.TabStop = false;
             gbNhapPhong.Text = "Thông tin phòng";
@@ -273,9 +273,9 @@
             panel2.Controls.Add(gbListPhong);
             panel2.Dock = DockStyle.Bottom;
             panel2.Font = new Font("Segoe UI", 11F);
-            panel2.Location = new Point(0, 312);
+            panel2.Location = new Point(0, 341);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1124, 299);
+            panel2.Size = new Size(1124, 270);
             panel2.TabIndex = 1;
             // 
             // gbListPhong
@@ -284,7 +284,7 @@
             gbListPhong.Controls.Add(dgvListPhong);
             gbListPhong.Location = new Point(12, 3);
             gbListPhong.Name = "gbListPhong";
-            gbListPhong.Size = new Size(1100, 284);
+            gbListPhong.Size = new Size(1100, 255);
             gbListPhong.TabIndex = 0;
             gbListPhong.TabStop = false;
             gbListPhong.Text = "Danh sách phòng";
@@ -296,7 +296,7 @@
             dgvListPhong.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvListPhong.Location = new Point(15, 22);
             dgvListPhong.Name = "dgvListPhong";
-            dgvListPhong.Size = new Size(1067, 256);
+            dgvListPhong.Size = new Size(1067, 227);
             dgvListPhong.TabIndex = 0;
             // 
             // PhongForm

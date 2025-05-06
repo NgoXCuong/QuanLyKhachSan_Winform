@@ -58,7 +58,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1124, 324);
+            panel1.Size = new Size(1124, 335);
             panel1.TabIndex = 0;
             // 
             // groupBox1
@@ -79,7 +79,7 @@
             groupBox1.Font = new Font("Segoe UI", 10F);
             groupBox1.Location = new Point(12, 5);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(1100, 304);
+            groupBox1.Size = new Size(1100, 316);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Thông tin dịch vụ";
@@ -197,9 +197,9 @@
             // 
             panel2.Controls.Add(groupBox2);
             panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(0, 330);
+            panel2.Location = new Point(0, 341);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1124, 281);
+            panel2.Size = new Size(1124, 270);
             panel2.TabIndex = 1;
             // 
             // groupBox2
@@ -208,7 +208,7 @@
             groupBox2.Controls.Add(dataGridView1);
             groupBox2.Location = new Point(12, 3);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(1100, 270);
+            groupBox2.Size = new Size(1100, 255);
             groupBox2.TabIndex = 0;
             groupBox2.TabStop = false;
             groupBox2.Text = "Danh sách dịch vụ";
@@ -219,7 +219,7 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(11, 24);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(1083, 236);
+            dataGridView1.Size = new Size(1083, 225);
             dataGridView1.TabIndex = 0;
             // 
             // DichVuForm
