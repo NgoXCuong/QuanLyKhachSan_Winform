@@ -9,7 +9,10 @@ namespace QuanLyKhachSan_WinForm.ViewModel
 {
     internal class ConnectDatabase
     {
-        string connectionString = "Data Source=Mr-Cuong\\SQLEXPRESS;Initial Catalog=QLKhachSan;Integrated Security=True";
+        string connectionString = "Server=localhost;Database=QLKhachSan;User Id=sa;Password=123;";
+
+        // Để lại dòng đã Comment (Manh)
+        //string connectionString = "Server=localhost;Database=QLKhachSan;User Id=sa;Password=123;";
 
         public SqlConnection GetConnection()
         {
