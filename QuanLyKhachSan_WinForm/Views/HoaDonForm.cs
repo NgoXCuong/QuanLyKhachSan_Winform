@@ -16,5 +16,25 @@ namespace QuanLyKhachSan_WinForm.Views
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //private void label1_Click(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //private void lbMaHoaDon_Click(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //private void lbHoaDon_Click(object sender, EventArgs e)
+        //{
+
+        //}
     }
 }
