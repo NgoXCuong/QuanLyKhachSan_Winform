@@ -1,2 +1,2 @@
-# Bài tập lơn môn Lập trình .NET
+# Bài tập lớn môn Lập trình .NET
 Chủ đề: Xây dụng ứng dụng quản lý khách sạn
