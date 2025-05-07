@@ -39,6 +39,8 @@
             pictureBox2 = new PictureBox();
             btnExit = new Button();
             pMenu = new Panel();
+            btnThongKe = new Button();
+            picThongKe = new PictureBox();
             btnDichVu = new Button();
             btnKhachHang = new Button();
             btnHoaDon = new Button();
@@ -52,20 +54,18 @@
             picHome = new PictureBox();
             btnHome = new Button();
             pnPage = new Panel();
-            btnThongKe = new Button();
-            picThongKe = new PictureBox();
             pTitle.SuspendLayout();
             panel2.SuspendLayout();
             pExit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             pMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picThongKe).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picDichVu).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picKhachHang).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picHoaDon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picNhanVien).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picPhong).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picHome).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)picThongKe).BeginInit();
             SuspendLayout();
             // 
             // pTitle
@@ -86,7 +86,7 @@
             lbDateTime.AutoSize = true;
             lbDateTime.Font = new Font("Segoe UI", 11F);
             lbDateTime.ForeColor = SystemColors.ButtonHighlight;
-            lbDateTime.Location = new Point(1135, 20);
+            lbDateTime.Location = new Point(1075, 19);
             lbDateTime.Name = "lbDateTime";
             lbDateTime.Size = new Size(44, 20);
             lbDateTime.TabIndex = 4;
@@ -190,6 +190,28 @@
             pMenu.Name = "pMenu";
             pMenu.Size = new Size(140, 581);
             pMenu.TabIndex = 2;
+            // 
+            // btnThongKe
+            // 
+            btnThongKe.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnThongKe.Location = new Point(36, 275);
+            btnThongKe.Name = "btnThongKe";
+            btnThongKe.Size = new Size(100, 30);
+            btnThongKe.TabIndex = 13;
+            btnThongKe.Text = "Thống kê";
+            btnThongKe.TextAlign = ContentAlignment.MiddleLeft;
+            btnThongKe.UseVisualStyleBackColor = true;
+            btnThongKe.Click += btnThongKe_Click;
+            // 
+            // picThongKe
+            // 
+            picThongKe.BackgroundImage = (Image)resources.GetObject("picThongKe.BackgroundImage");
+            picThongKe.BackgroundImageLayout = ImageLayout.Center;
+            picThongKe.Location = new Point(5, 275);
+            picThongKe.Name = "picThongKe";
+            picThongKe.Size = new Size(30, 30);
+            picThongKe.TabIndex = 12;
+            picThongKe.TabStop = false;
             // 
             // btnDichVu
             // 
@@ -333,28 +355,6 @@
             pnPage.Size = new Size(1140, 650);
             pnPage.TabIndex = 2;
             // 
-            // btnThongKe
-            // 
-            btnThongKe.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            btnThongKe.Location = new Point(36, 275);
-            btnThongKe.Name = "btnThongKe";
-            btnThongKe.Size = new Size(100, 30);
-            btnThongKe.TabIndex = 13;
-            btnThongKe.Text = "Thống kê";
-            btnThongKe.TextAlign = ContentAlignment.MiddleLeft;
-            btnThongKe.UseVisualStyleBackColor = true;
-            btnThongKe.Click += btnThongKe_Click;
-            // 
-            // picThongKe
-            // 
-            picThongKe.BackgroundImage = (Image)resources.GetObject("picThongKe.BackgroundImage");
-            picThongKe.BackgroundImageLayout = ImageLayout.Center;
-            picThongKe.Location = new Point(5, 275);
-            picThongKe.Name = "picThongKe";
-            picThongKe.Size = new Size(30, 30);
-            picThongKe.TabIndex = 12;
-            picThongKe.TabStop = false;
-            // 
             // HomeForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -374,13 +374,13 @@
             pExit.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             pMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)picThongKe).EndInit();
             ((System.ComponentModel.ISupportInitialize)picDichVu).EndInit();
             ((System.ComponentModel.ISupportInitialize)picKhachHang).EndInit();
             ((System.ComponentModel.ISupportInitialize)picHoaDon).EndInit();
             ((System.ComponentModel.ISupportInitialize)picNhanVien).EndInit();
             ((System.ComponentModel.ISupportInitialize)picPhong).EndInit();
             ((System.ComponentModel.ISupportInitialize)picHome).EndInit();
-            ((System.ComponentModel.ISupportInitialize)picThongKe).EndInit();
             ResumeLayout(false);
         }
 
