@@ -39,6 +39,8 @@
             pictureBox2 = new PictureBox();
             btnExit = new Button();
             pMenu = new Panel();
+            btnDatPhong = new Button();
+            picDatPhong = new PictureBox();
             btnThongKe = new Button();
             picThongKe = new PictureBox();
             btnDichVu = new Button();
@@ -59,6 +61,7 @@
             pExit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             pMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picDatPhong).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picThongKe).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picDichVu).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picKhachHang).BeginInit();
@@ -171,6 +174,8 @@
             // pMenu
             // 
             pMenu.BackColor = Color.MediumSeaGreen;
+            pMenu.Controls.Add(btnDatPhong);
+            pMenu.Controls.Add(picDatPhong);
             pMenu.Controls.Add(btnThongKe);
             pMenu.Controls.Add(picThongKe);
             pMenu.Controls.Add(btnDichVu);
@@ -191,10 +196,32 @@
             pMenu.Size = new Size(140, 581);
             pMenu.TabIndex = 2;
             // 
+            // btnDatPhong
+            // 
+            btnDatPhong.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnDatPhong.Location = new Point(34, 256);
+            btnDatPhong.Name = "btnDatPhong";
+            btnDatPhong.Size = new Size(100, 30);
+            btnDatPhong.TabIndex = 15;
+            btnDatPhong.Text = "Đặt phòng";
+            btnDatPhong.TextAlign = ContentAlignment.MiddleLeft;
+            btnDatPhong.UseVisualStyleBackColor = true;
+            btnDatPhong.Click += btnDatPhong_Click;
+            // 
+            // picDatPhong
+            // 
+            picDatPhong.BackgroundImage = (Image)resources.GetObject("picDatPhong.BackgroundImage");
+            picDatPhong.BackgroundImageLayout = ImageLayout.Center;
+            picDatPhong.Location = new Point(3, 256);
+            picDatPhong.Name = "picDatPhong";
+            picDatPhong.Size = new Size(30, 30);
+            picDatPhong.TabIndex = 14;
+            picDatPhong.TabStop = false;
+            // 
             // btnThongKe
             // 
             btnThongKe.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            btnThongKe.Location = new Point(36, 275);
+            btnThongKe.Location = new Point(34, 298);
             btnThongKe.Name = "btnThongKe";
             btnThongKe.Size = new Size(100, 30);
             btnThongKe.TabIndex = 13;
@@ -207,7 +234,7 @@
             // 
             picThongKe.BackgroundImage = (Image)resources.GetObject("picThongKe.BackgroundImage");
             picThongKe.BackgroundImageLayout = ImageLayout.Center;
-            picThongKe.Location = new Point(5, 275);
+            picThongKe.Location = new Point(1, 298);
             picThongKe.Name = "picThongKe";
             picThongKe.Size = new Size(30, 30);
             picThongKe.TabIndex = 12;
@@ -216,7 +243,7 @@
             // btnDichVu
             // 
             btnDichVu.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            btnDichVu.Location = new Point(34, 235);
+            btnDichVu.Location = new Point(34, 216);
             btnDichVu.Name = "btnDichVu";
             btnDichVu.Size = new Size(100, 30);
             btnDichVu.TabIndex = 11;
@@ -228,7 +255,7 @@
             // btnKhachHang
             // 
             btnKhachHang.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            btnKhachHang.Location = new Point(34, 195);
+            btnKhachHang.Location = new Point(34, 176);
             btnKhachHang.Name = "btnKhachHang";
             btnKhachHang.Size = new Size(100, 30);
             btnKhachHang.TabIndex = 10;
@@ -240,7 +267,7 @@
             // btnHoaDon
             // 
             btnHoaDon.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            btnHoaDon.Location = new Point(34, 155);
+            btnHoaDon.Location = new Point(34, 136);
             btnHoaDon.Name = "btnHoaDon";
             btnHoaDon.Size = new Size(100, 30);
             btnHoaDon.TabIndex = 9;
@@ -252,7 +279,7 @@
             // btnNhanVien
             // 
             btnNhanVien.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            btnNhanVien.Location = new Point(34, 115);
+            btnNhanVien.Location = new Point(34, 96);
             btnNhanVien.Name = "btnNhanVien";
             btnNhanVien.Size = new Size(100, 30);
             btnNhanVien.TabIndex = 8;
@@ -265,7 +292,7 @@
             // 
             picDichVu.BackgroundImage = (Image)resources.GetObject("picDichVu.BackgroundImage");
             picDichVu.BackgroundImageLayout = ImageLayout.Center;
-            picDichVu.Location = new Point(3, 235);
+            picDichVu.Location = new Point(3, 216);
             picDichVu.Name = "picDichVu";
             picDichVu.Size = new Size(30, 30);
             picDichVu.TabIndex = 7;
@@ -275,7 +302,7 @@
             // 
             picKhachHang.BackgroundImage = (Image)resources.GetObject("picKhachHang.BackgroundImage");
             picKhachHang.BackgroundImageLayout = ImageLayout.Center;
-            picKhachHang.Location = new Point(3, 195);
+            picKhachHang.Location = new Point(3, 176);
             picKhachHang.Name = "picKhachHang";
             picKhachHang.Size = new Size(30, 30);
             picKhachHang.TabIndex = 6;
@@ -284,7 +311,7 @@
             // btnPhong
             // 
             btnPhong.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            btnPhong.Location = new Point(34, 75);
+            btnPhong.Location = new Point(34, 56);
             btnPhong.Name = "btnPhong";
             btnPhong.Size = new Size(100, 30);
             btnPhong.TabIndex = 5;
@@ -297,7 +324,7 @@
             // 
             picHoaDon.BackgroundImage = (Image)resources.GetObject("picHoaDon.BackgroundImage");
             picHoaDon.BackgroundImageLayout = ImageLayout.Center;
-            picHoaDon.Location = new Point(3, 155);
+            picHoaDon.Location = new Point(3, 136);
             picHoaDon.Name = "picHoaDon";
             picHoaDon.Size = new Size(30, 30);
             picHoaDon.TabIndex = 4;
@@ -307,7 +334,7 @@
             // 
             picNhanVien.BackgroundImage = (Image)resources.GetObject("picNhanVien.BackgroundImage");
             picNhanVien.BackgroundImageLayout = ImageLayout.Center;
-            picNhanVien.Location = new Point(3, 115);
+            picNhanVien.Location = new Point(3, 96);
             picNhanVien.Name = "picNhanVien";
             picNhanVien.Size = new Size(30, 30);
             picNhanVien.TabIndex = 3;
@@ -318,7 +345,7 @@
             picPhong.BackColor = Color.Transparent;
             picPhong.BackgroundImage = (Image)resources.GetObject("picPhong.BackgroundImage");
             picPhong.BackgroundImageLayout = ImageLayout.Center;
-            picPhong.Location = new Point(3, 75);
+            picPhong.Location = new Point(3, 56);
             picPhong.Name = "picPhong";
             picPhong.Size = new Size(30, 30);
             picPhong.TabIndex = 2;
@@ -329,7 +356,7 @@
             picHome.BackColor = Color.Transparent;
             picHome.BackgroundImage = (Image)resources.GetObject("picHome.BackgroundImage");
             picHome.BackgroundImageLayout = ImageLayout.Center;
-            picHome.Location = new Point(3, 35);
+            picHome.Location = new Point(3, 16);
             picHome.Name = "picHome";
             picHome.Size = new Size(30, 30);
             picHome.TabIndex = 1;
@@ -338,7 +365,7 @@
             // btnHome
             // 
             btnHome.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            btnHome.Location = new Point(34, 34);
+            btnHome.Location = new Point(34, 15);
             btnHome.Name = "btnHome";
             btnHome.Size = new Size(100, 30);
             btnHome.TabIndex = 0;
@@ -374,6 +401,7 @@
             pExit.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             pMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)picDatPhong).EndInit();
             ((System.ComponentModel.ISupportInitialize)picThongKe).EndInit();
             ((System.ComponentModel.ISupportInitialize)picDichVu).EndInit();
             ((System.ComponentModel.ISupportInitialize)picKhachHang).EndInit();
@@ -411,5 +439,7 @@
         private Panel pnPage;
         private Button btnThongKe;
         private PictureBox picThongKe;
+        private Button btnDatPhong;
+        private PictureBox picDatPhong;
     }
 }

@@ -75,6 +75,9 @@ namespace QuanLyKhachSan_WinForm.Views
             btnDichVu.BackColor = Color.White;
             btnDichVu.ForeColor = Color.Black;
 
+            btnDatPhong.BackColor = Color.White;
+            btnDatPhong.ForeColor = Color.Black;
+
             btnThongKe.BackColor = Color.White;
             btnThongKe.ForeColor = Color.Black;
 
@@ -129,6 +132,12 @@ namespace QuanLyKhachSan_WinForm.Views
         {
             OpenChildForm(new ThongKeForm());
             HighlightButton(btnThongKe);
+        }
+
+        private void btnDatPhong_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new DatPhongForm());
+            HighlightButton(btnDatPhong);
         }
     }
 }

@@ -32,7 +32,7 @@ namespace QuanLyKhachSan_WinForm.Views
             this.StartPosition = FormStartPosition.CenterScreen;
             this.BackColor = secondaryColor;
             this.Font = new Font("Segoe UI", 10F, FontStyle.Regular);
-            this.Padding = new Padding(15);
+            this.Padding = new Padding(5);
 
             CreateHeader();
             CreateDashboardCards();
@@ -44,7 +44,7 @@ namespace QuanLyKhachSan_WinForm.Views
             Panel panelHeader = new Panel
             {
                 Dock = DockStyle.Top,
-                Height = 60,
+                Height = 40,
                 BackColor = Color.White,
                 //Padding = new Padding(20, 10, 20, 10)
                 Padding = new Padding(5, 5, 5, 5)
@@ -53,7 +53,7 @@ namespace QuanLyKhachSan_WinForm.Views
             Label lblTitle = new Label
             {
                 Text = "THỐNG KÊ TỔNG QUAN",
-                Font = new Font("Segoe UI", 18F, FontStyle.Bold),
+                Font = new Font("Segoe UI", 16F, FontStyle.Bold),
                 ForeColor = primaryColor,
                 Dock = DockStyle.Left,
                 AutoSize = true
@@ -62,7 +62,7 @@ namespace QuanLyKhachSan_WinForm.Views
             ComboBox cmbTimeRange = new ComboBox
             {
                 Width = 200,
-                Height = 35,
+                Height = 30,
                 Dock = DockStyle.Right,
                 Font = new Font("Segoe UI", 11F),
                 DropDownStyle = ComboBoxStyle.DropDownList
@@ -92,10 +92,10 @@ namespace QuanLyKhachSan_WinForm.Views
             panelTop = new Panel
             {
                 Dock = DockStyle.Top,
-                Height = 150,
-                Padding = new Padding(10),
+                Height = 125,
+                Padding = new Padding(5),
                 BackColor = secondaryColor,
-                Margin = new Padding(0, 10, 0, 0)
+                Margin = new Padding(0, 0, 0, 10)
             };
 
             // TableLayoutPanel chia 4 cột đều nhau
@@ -127,7 +127,7 @@ namespace QuanLyKhachSan_WinForm.Views
             panelBottom = new Panel
             {
                 Dock = DockStyle.Fill,
-                Padding = new Padding(10),
+                Padding = new Padding(5),
                 BackColor = secondaryColor
             };
 
@@ -372,11 +372,11 @@ namespace QuanLyKhachSan_WinForm.Views
         {
             Panel panel = new Panel
             {
-                Height = 120,
-                Margin = new Padding(8),
+                Height = 40,
+                Margin = new Padding(2),
                 BackColor = Color.White,
                 Dock = DockStyle.Fill,
-                Padding = new Padding(15)
+                Padding = new Padding(5)
             };
 
             // Shadow effect with rounded corners
@@ -429,7 +429,7 @@ namespace QuanLyKhachSan_WinForm.Views
             Label lblValue = new Label
             {
                 Text = value,
-                Font = new Font("Segoe UI", 16, FontStyle.Bold),
+                Font = new Font("Segoe UI", 12, FontStyle.Bold),
                 ForeColor = textColor,
                 AutoSize = true,
                 Location = new Point(15, 75)
@@ -439,7 +439,7 @@ namespace QuanLyKhachSan_WinForm.Views
             Label lblGrowth = new Label
             {
                 Text = growth,
-                Font = new Font("Segoe UI", 9, FontStyle.Bold),
+                Font = new Font("Segoe UI", 12, FontStyle.Bold),
                 ForeColor = growth.StartsWith("+") ? accentColor1 : accentColor3,
                 AutoSize = true,
                 Location = new Point(panel.Width - 60, 80)
@@ -457,7 +457,7 @@ namespace QuanLyKhachSan_WinForm.Views
             Panel panel = new Panel
             {
                 Dock = DockStyle.Fill,
-                Margin = new Padding(8),
+                Margin = new Padding(2),
                 BackColor = Color.White,
                 Padding = new Padding(15, 40, 15, 15),
                 MinimumSize = new Size(100, 100) // Đảm bảo panel luôn có kích thước tối thiểu
