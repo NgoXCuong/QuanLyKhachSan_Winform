@@ -28,10 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "ThongKeForm";
+            SuspendLayout();
+            // 
+            // ThongKeForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 17F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1123, 611);
+            Font = new Font("Segoe UI", 10F);
+            Name = "ThongKeForm";
+            Text = "ThongKeForm";
+            ResumeLayout(false);
         }
 
         #endregion
