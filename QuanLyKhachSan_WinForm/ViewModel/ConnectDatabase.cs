@@ -11,7 +11,7 @@ namespace QuanLyKhachSan_WinForm.ViewModel
     {
         string connectionString = "Server=localhost;Database=QLKhachSan;User Id=sa;Password=123;";
 
-        // Để lại dòng đã Comment (Manh)
+        // Để lại dòng đã Comment 
         //string connectionString = "Server=localhost;Database=QLKhachSan;User Id=sa;Password=123;";
 
         public SqlConnection GetConnection()
