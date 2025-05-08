@@ -10,7 +10,7 @@ namespace QuanLyKhachSan_WinForm.Models
     {
         public string MaPhong { get; set; }
         public int soPhong { get; set; }
-        public string loaiPhong { get; set; }
+        public int maloaiPhong { get; set; }
         public decimal donGia { get; set; }
         public string trangThai { get; set; }
         public string mota { get; set; }    

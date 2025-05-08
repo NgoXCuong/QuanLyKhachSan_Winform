@@ -8,7 +8,7 @@ using QuanLyKhachSan_WinForm.Models;
 
 namespace QuanLyKhachSan_WinForm.ViewModel
 {
-    internal class PhongVM : INotifyPropertyChanged
+    public class PhongVM : INotifyPropertyChanged
     {
         private PhongModel phongMD = new PhongModel();
         public string MaPhong
@@ -20,6 +20,62 @@ namespace QuanLyKhachSan_WinForm.ViewModel
                 OnPropertyChanged(nameof(MaPhong));
             }
         }
+
+        public int soPhong { 
+            get { return phongMD.soPhong; }
+            set
+            {
+                phongMD.soPhong = value;
+                OnPropertyChanged(nameof(soPhong));
+            }
+        }
+
+        public int maloaiPhong
+        {
+            get { return phongMD.maloaiPhong; }
+            set
+            {
+                phongMD.maloaiPhong = value;
+                OnPropertyChanged(nameof(maloaiPhong));
+            }
+        }
+
+        public decimal donGia
+        {
+            get { return phongMD.donGia; }
+            set
+            {
+                phongMD.donGia = value;
+                OnPropertyChanged(nameof(donGia));
+            }
+        }
+        public string trangThai
+        {
+            get { return phongMD.trangThai; }
+            set
+            {
+                phongMD.trangThai = value;
+                OnPropertyChanged(nameof(trangThai));
+            }
+        }
+        public string mota
+        {
+            get { return phongMD.mota; }
+            set
+            {
+                phongMD.mota = value;
+                OnPropertyChanged(nameof(mota));
+            }
+        }
+
+        public void saveDatabase()
+        {
+            PhongRepository phongRepo = new PhongRepository();
+            phongRepo.addPhong(phongMD);
+        }
+
+
+
         public event PropertyChangedEventHandler PropertyChanged;
 
 
