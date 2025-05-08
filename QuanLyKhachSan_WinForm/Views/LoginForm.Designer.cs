@@ -31,6 +31,7 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             panel1 = new Panel();
+            checkBoxHidePass = new CheckBox();
             btnLogin = new Button();
             groupBox2 = new GroupBox();
             txtPassword = new TextBox();
@@ -43,7 +44,6 @@
             btnExit = new Button();
             pictureBox1 = new PictureBox();
             imageList1 = new ImageList(components);
-            checkBoxHidePass = new CheckBox();
             panel1.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -67,6 +67,18 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(700, 450);
             panel1.TabIndex = 0;
+            // 
+            // checkBoxHidePass
+            // 
+            checkBoxHidePass.AutoSize = true;
+            checkBoxHidePass.Font = new Font("Segoe UI", 10F);
+            checkBoxHidePass.Location = new Point(328, 266);
+            checkBoxHidePass.Name = "checkBoxHidePass";
+            checkBoxHidePass.Size = new Size(107, 23);
+            checkBoxHidePass.TabIndex = 5;
+            checkBoxHidePass.Text = "Ẩn mật khẩu";
+            checkBoxHidePass.UseVisualStyleBackColor = true;
+            checkBoxHidePass.CheckedChanged += checkBoxHidePass_CheckedChanged;
             // 
             // btnLogin
             // 
@@ -142,7 +154,7 @@
             lbLogin.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             lbLogin.AutoSize = true;
             lbLogin.Font = new Font("Arial", 24.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbLogin.Location = new Point(432, 51);
+            lbLogin.Location = new Point(437, 51);
             lbLogin.Name = "lbLogin";
             lbLogin.Size = new Size(120, 38);
             lbLogin.TabIndex = 1;
@@ -184,18 +196,6 @@
             imageList1.ColorDepth = ColorDepth.Depth32Bit;
             imageList1.ImageSize = new Size(16, 16);
             imageList1.TransparentColor = Color.Transparent;
-            // 
-            // checkBoxHidePass
-            // 
-            checkBoxHidePass.AutoSize = true;
-            checkBoxHidePass.Font = new Font("Segoe UI", 10F);
-            checkBoxHidePass.Location = new Point(328, 266);
-            checkBoxHidePass.Name = "checkBoxHidePass";
-            checkBoxHidePass.Size = new Size(107, 23);
-            checkBoxHidePass.TabIndex = 5;
-            checkBoxHidePass.Text = "Ẩn mật khẩu";
-            checkBoxHidePass.UseVisualStyleBackColor = true;
-            checkBoxHidePass.CheckedChanged += checkBoxHidePass_CheckedChanged;
             // 
             // LoginForm
             // 

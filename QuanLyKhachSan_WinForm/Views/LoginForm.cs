@@ -77,5 +77,13 @@ namespace QuanLyKhachSan_WinForm.Views
                 txtPassword.UseSystemPasswordChar = false; // Hiện mật khẩu ra bình thường
             }
         }
+
+        private void linkDangKy_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            //DangKyForm dangKyForm = new DangKyForm();
+            //this.Hide(); // Ẩn login
+            //dangKyForm.FormClosed += (s, args) => this.Show(); // Hiện lại login khi form đăng ký đóng
+            //dangKyForm.Show();
+        }
     }
 }

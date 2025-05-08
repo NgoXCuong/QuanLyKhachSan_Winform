@@ -30,18 +30,6 @@
         {
             tabControl1 = new TabControl();
             tabQuanLyPhong = new TabPage();
-            tabLoaiPhong = new TabPage();
-            panel2 = new Panel();
-            gbListPhong = new GroupBox();
-            dgvListPhong = new DataGridView();
-            panel1 = new Panel();
-            dataGridView1 = new DataGridView();
-            gbNhapPhong = new GroupBox();
-            txtTrangThai = new TextBox();
-            txtSoPhong = new TextBox();
-            lbTrangThai = new Label();
-            label3 = new Label();
-            lbSoPhong = new Label();
             panel3 = new Panel();
             groupBox1 = new GroupBox();
             txtTim = new TextBox();
@@ -50,48 +38,60 @@
             btnXoa = new Button();
             btnSua = new Button();
             btnThem = new Button();
-            sqlCommand1 = new Microsoft.Data.SqlClient.SqlCommand();
+            panel2 = new Panel();
+            gbListPhong = new GroupBox();
+            dgvListPhong = new DataGridView();
+            panel1 = new Panel();
+            dataGridView1 = new DataGridView();
+            gbNhapPhong = new GroupBox();
             cbLoaiPhong = new ComboBox();
-            panel4 = new Panel();
-            panel5 = new Panel();
+            txtTrangThai = new TextBox();
+            txtSoPhong = new TextBox();
+            lbTrangThai = new Label();
+            label3 = new Label();
+            lbSoPhong = new Label();
+            tabLoaiPhong = new TabPage();
             panel6 = new Panel();
-            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            groupBox2 = new GroupBox();
-            groupBox3 = new GroupBox();
             groupBox4 = new GroupBox();
-            label1 = new Label();
-            label2 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
+            dgvListLoaiPhong = new DataGridView();
+            panel5 = new Panel();
+            groupBox3 = new GroupBox();
             textBox5 = new TextBox();
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
             button4 = new Button();
             button5 = new Button();
-            dgvListLoaiPhong = new DataGridView();
+            panel4 = new Panel();
+            groupBox2 = new GroupBox();
+            textBox4 = new TextBox();
+            textBox3 = new TextBox();
+            textBox2 = new TextBox();
+            textBox1 = new TextBox();
+            label5 = new Label();
+            label4 = new Label();
+            label2 = new Label();
+            label1 = new Label();
+            sqlCommand1 = new Microsoft.Data.SqlClient.SqlCommand();
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             tabControl1.SuspendLayout();
             tabQuanLyPhong.SuspendLayout();
-            tabLoaiPhong.SuspendLayout();
+            panel3.SuspendLayout();
+            groupBox1.SuspendLayout();
             panel2.SuspendLayout();
             gbListPhong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvListPhong).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             gbNhapPhong.SuspendLayout();
-            panel3.SuspendLayout();
-            groupBox1.SuspendLayout();
-            panel4.SuspendLayout();
-            panel5.SuspendLayout();
+            tabLoaiPhong.SuspendLayout();
             panel6.SuspendLayout();
-            groupBox2.SuspendLayout();
-            groupBox3.SuspendLayout();
             groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvListLoaiPhong).BeginInit();
+            panel5.SuspendLayout();
+            groupBox3.SuspendLayout();
+            panel4.SuspendLayout();
+            groupBox2.SuspendLayout();
             SuspendLayout();
             // 
             // tabControl1
@@ -116,127 +116,6 @@
             tabQuanLyPhong.TabIndex = 0;
             tabQuanLyPhong.Text = "Quản lý phòng";
             tabQuanLyPhong.UseVisualStyleBackColor = true;
-            // 
-            // tabLoaiPhong
-            // 
-            tabLoaiPhong.BackColor = Color.FromArgb(192, 255, 192);
-            tabLoaiPhong.Controls.Add(panel6);
-            tabLoaiPhong.Controls.Add(panel5);
-            tabLoaiPhong.Controls.Add(panel4);
-            tabLoaiPhong.Location = new Point(4, 26);
-            tabLoaiPhong.Name = "tabLoaiPhong";
-            tabLoaiPhong.Padding = new Padding(3);
-            tabLoaiPhong.Size = new Size(1110, 574);
-            tabLoaiPhong.TabIndex = 1;
-            tabLoaiPhong.Text = "Quản lý loại phòng";
-            // 
-            // panel2
-            // 
-            panel2.Controls.Add(gbListPhong);
-            panel2.Dock = DockStyle.Bottom;
-            panel2.Font = new Font("Segoe UI", 11F);
-            panel2.Location = new Point(3, 301);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(1104, 270);
-            panel2.TabIndex = 3;
-            // 
-            // gbListPhong
-            // 
-            gbListPhong.BackColor = Color.White;
-            gbListPhong.Controls.Add(dgvListPhong);
-            gbListPhong.Location = new Point(12, 16);
-            gbListPhong.Name = "gbListPhong";
-            gbListPhong.Size = new Size(1100, 251);
-            gbListPhong.TabIndex = 0;
-            gbListPhong.TabStop = false;
-            gbListPhong.Text = "Danh sách phòng";
-            // 
-            // dgvListPhong
-            // 
-            dgvListPhong.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvListPhong.BackgroundColor = SystemColors.ControlLight;
-            dgvListPhong.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvListPhong.Location = new Point(17, 22);
-            dgvListPhong.Name = "dgvListPhong";
-            dgvListPhong.Size = new Size(1056, 223);
-            dgvListPhong.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            panel1.Controls.Add(dataGridView1);
-            panel1.Controls.Add(gbNhapPhong);
-            panel1.Font = new Font("Segoe UI", 11F);
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(775, 292);
-            panel1.TabIndex = 2;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(118, 406);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(309, 209);
-            dataGridView1.TabIndex = 0;
-            // 
-            // gbNhapPhong
-            // 
-            gbNhapPhong.BackColor = Color.White;
-            gbNhapPhong.Controls.Add(cbLoaiPhong);
-            gbNhapPhong.Controls.Add(txtTrangThai);
-            gbNhapPhong.Controls.Add(txtSoPhong);
-            gbNhapPhong.Controls.Add(lbTrangThai);
-            gbNhapPhong.Controls.Add(label3);
-            gbNhapPhong.Controls.Add(lbSoPhong);
-            gbNhapPhong.Location = new Point(12, 3);
-            gbNhapPhong.Name = "gbNhapPhong";
-            gbNhapPhong.Size = new Size(750, 277);
-            gbNhapPhong.TabIndex = 0;
-            gbNhapPhong.TabStop = false;
-            gbNhapPhong.Text = "Thông tin phòng";
-            // 
-            // txtTrangThai
-            // 
-            txtTrangThai.BorderStyle = BorderStyle.FixedSingle;
-            txtTrangThai.Location = new Point(252, 210);
-            txtTrangThai.Name = "txtTrangThai";
-            txtTrangThai.Size = new Size(225, 27);
-            txtTrangThai.TabIndex = 16;
-            // 
-            // txtSoPhong
-            // 
-            txtSoPhong.BorderStyle = BorderStyle.FixedSingle;
-            txtSoPhong.Location = new Point(251, 66);
-            txtSoPhong.Name = "txtSoPhong";
-            txtSoPhong.Size = new Size(225, 27);
-            txtSoPhong.TabIndex = 13;
-            // 
-            // lbTrangThai
-            // 
-            lbTrangThai.AutoSize = true;
-            lbTrangThai.Location = new Point(252, 188);
-            lbTrangThai.Name = "lbTrangThai";
-            lbTrangThai.Size = new Size(78, 20);
-            lbTrangThai.TabIndex = 9;
-            lbTrangThai.Text = "Trạng thái:";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(252, 115);
-            label3.Name = "label3";
-            label3.Size = new Size(87, 20);
-            label3.TabIndex = 7;
-            label3.Text = "Loại phòng:";
-            // 
-            // lbSoPhong
-            // 
-            lbSoPhong.AutoSize = true;
-            lbSoPhong.Location = new Point(252, 44);
-            lbSoPhong.Name = "lbSoPhong";
-            lbSoPhong.Size = new Size(76, 20);
-            lbSoPhong.TabIndex = 1;
-            lbSoPhong.Text = "Số phòng:";
             // 
             // panel3
             // 
@@ -319,12 +198,70 @@
             btnThem.Text = "Thêm";
             btnThem.UseVisualStyleBackColor = false;
             // 
-            // sqlCommand1
+            // panel2
             // 
-            sqlCommand1.CommandTimeout = 30;
-            sqlCommand1.Connection = null;
-            sqlCommand1.Notification = null;
-            sqlCommand1.Transaction = null;
+            panel2.Controls.Add(gbListPhong);
+            panel2.Dock = DockStyle.Bottom;
+            panel2.Font = new Font("Segoe UI", 11F);
+            panel2.Location = new Point(3, 301);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1104, 270);
+            panel2.TabIndex = 3;
+            // 
+            // gbListPhong
+            // 
+            gbListPhong.BackColor = Color.White;
+            gbListPhong.Controls.Add(dgvListPhong);
+            gbListPhong.Location = new Point(12, 16);
+            gbListPhong.Name = "gbListPhong";
+            gbListPhong.Size = new Size(1100, 251);
+            gbListPhong.TabIndex = 0;
+            gbListPhong.TabStop = false;
+            gbListPhong.Text = "Danh sách phòng";
+            // 
+            // dgvListPhong
+            // 
+            dgvListPhong.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvListPhong.BackgroundColor = SystemColors.ControlLight;
+            dgvListPhong.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvListPhong.Location = new Point(17, 22);
+            dgvListPhong.Name = "dgvListPhong";
+            dgvListPhong.Size = new Size(1056, 223);
+            dgvListPhong.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(dataGridView1);
+            panel1.Controls.Add(gbNhapPhong);
+            panel1.Font = new Font("Segoe UI", 11F);
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(775, 292);
+            panel1.TabIndex = 2;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(118, 406);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(309, 209);
+            dataGridView1.TabIndex = 0;
+            // 
+            // gbNhapPhong
+            // 
+            gbNhapPhong.BackColor = Color.White;
+            gbNhapPhong.Controls.Add(cbLoaiPhong);
+            gbNhapPhong.Controls.Add(txtTrangThai);
+            gbNhapPhong.Controls.Add(txtSoPhong);
+            gbNhapPhong.Controls.Add(lbTrangThai);
+            gbNhapPhong.Controls.Add(label3);
+            gbNhapPhong.Controls.Add(lbSoPhong);
+            gbNhapPhong.Location = new Point(12, 3);
+            gbNhapPhong.Name = "gbNhapPhong";
+            gbNhapPhong.Size = new Size(750, 277);
+            gbNhapPhong.TabIndex = 0;
+            gbNhapPhong.TabStop = false;
+            gbNhapPhong.Text = "Thông tin phòng";
             // 
             // cbLoaiPhong
             // 
@@ -334,23 +271,61 @@
             cbLoaiPhong.Size = new Size(224, 28);
             cbLoaiPhong.TabIndex = 17;
             // 
-            // panel4
+            // txtTrangThai
             // 
-            panel4.BackColor = Color.White;
-            panel4.Controls.Add(groupBox2);
-            panel4.Location = new Point(4, 5);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(805, 266);
-            panel4.TabIndex = 0;
+            txtTrangThai.BorderStyle = BorderStyle.FixedSingle;
+            txtTrangThai.Location = new Point(252, 210);
+            txtTrangThai.Name = "txtTrangThai";
+            txtTrangThai.Size = new Size(225, 27);
+            txtTrangThai.TabIndex = 16;
             // 
-            // panel5
+            // txtSoPhong
             // 
-            panel5.BackColor = Color.White;
-            panel5.Controls.Add(groupBox3);
-            panel5.Location = new Point(815, 6);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(292, 265);
-            panel5.TabIndex = 1;
+            txtSoPhong.BorderStyle = BorderStyle.FixedSingle;
+            txtSoPhong.Location = new Point(251, 66);
+            txtSoPhong.Name = "txtSoPhong";
+            txtSoPhong.Size = new Size(225, 27);
+            txtSoPhong.TabIndex = 13;
+            // 
+            // lbTrangThai
+            // 
+            lbTrangThai.AutoSize = true;
+            lbTrangThai.Location = new Point(252, 188);
+            lbTrangThai.Name = "lbTrangThai";
+            lbTrangThai.Size = new Size(78, 20);
+            lbTrangThai.TabIndex = 9;
+            lbTrangThai.Text = "Trạng thái:";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(252, 115);
+            label3.Name = "label3";
+            label3.Size = new Size(87, 20);
+            label3.TabIndex = 7;
+            label3.Text = "Loại phòng:";
+            // 
+            // lbSoPhong
+            // 
+            lbSoPhong.AutoSize = true;
+            lbSoPhong.Location = new Point(252, 44);
+            lbSoPhong.Name = "lbSoPhong";
+            lbSoPhong.Size = new Size(76, 20);
+            lbSoPhong.TabIndex = 1;
+            lbSoPhong.Text = "Số phòng:";
+            // 
+            // tabLoaiPhong
+            // 
+            tabLoaiPhong.BackColor = Color.White;
+            tabLoaiPhong.Controls.Add(panel6);
+            tabLoaiPhong.Controls.Add(panel5);
+            tabLoaiPhong.Controls.Add(panel4);
+            tabLoaiPhong.Location = new Point(4, 26);
+            tabLoaiPhong.Name = "tabLoaiPhong";
+            tabLoaiPhong.Padding = new Padding(3);
+            tabLoaiPhong.Size = new Size(1110, 574);
+            tabLoaiPhong.TabIndex = 1;
+            tabLoaiPhong.Text = "Quản lý loại phòng";
             // 
             // panel6
             // 
@@ -362,23 +337,34 @@
             panel6.Size = new Size(1104, 291);
             panel6.TabIndex = 2;
             // 
-            // groupBox2
+            // groupBox4
             // 
-            groupBox2.Controls.Add(textBox4);
-            groupBox2.Controls.Add(textBox3);
-            groupBox2.Controls.Add(textBox2);
-            groupBox2.Controls.Add(textBox1);
-            groupBox2.Controls.Add(label5);
-            groupBox2.Controls.Add(label4);
-            groupBox2.Controls.Add(label2);
-            groupBox2.Controls.Add(label1);
-            groupBox2.Font = new Font("Segoe UI", 11F);
-            groupBox2.Location = new Point(10, 5);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(776, 247);
-            groupBox2.TabIndex = 0;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Thông tin loại phòng";
+            groupBox4.Controls.Add(dgvListLoaiPhong);
+            groupBox4.Font = new Font("Segoe UI", 11F);
+            groupBox4.Location = new Point(16, 7);
+            groupBox4.Name = "groupBox4";
+            groupBox4.Size = new Size(1073, 281);
+            groupBox4.TabIndex = 0;
+            groupBox4.TabStop = false;
+            groupBox4.Text = "Danh sách loại phòng";
+            // 
+            // dgvListLoaiPhong
+            // 
+            dgvListLoaiPhong.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvListLoaiPhong.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvListLoaiPhong.Location = new Point(13, 24);
+            dgvListLoaiPhong.Name = "dgvListLoaiPhong";
+            dgvListLoaiPhong.Size = new Size(1045, 251);
+            dgvListLoaiPhong.TabIndex = 0;
+            // 
+            // panel5
+            // 
+            panel5.BackColor = Color.White;
+            panel5.Controls.Add(groupBox3);
+            panel5.Location = new Point(815, 6);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(292, 265);
+            panel5.TabIndex = 1;
             // 
             // groupBox3
             // 
@@ -395,91 +381,6 @@
             groupBox3.TabIndex = 0;
             groupBox3.TabStop = false;
             groupBox3.Text = "Chức năng";
-            // 
-            // groupBox4
-            // 
-            groupBox4.Controls.Add(dgvListLoaiPhong);
-            groupBox4.Font = new Font("Segoe UI", 11F);
-            groupBox4.Location = new Point(16, 7);
-            groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(1073, 281);
-            groupBox4.TabIndex = 0;
-            groupBox4.TabStop = false;
-            groupBox4.Text = "Danh sách loại phòng";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 11F);
-            label1.Location = new Point(96, 40);
-            label1.Name = "label1";
-            label1.Size = new Size(111, 20);
-            label1.TabIndex = 0;
-            label1.Text = "Tên loại phòng:";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 11F);
-            label2.Location = new Point(96, 129);
-            label2.Name = "label2";
-            label2.Size = new Size(51, 20);
-            label2.TabIndex = 1;
-            label2.Text = "Mô tả:";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 11F);
-            label4.Location = new Point(467, 40);
-            label4.Name = "label4";
-            label4.Size = new Size(81, 20);
-            label4.TabIndex = 2;
-            label4.Text = "Giá phòng:";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 11F);
-            label5.Location = new Point(467, 129);
-            label5.Name = "label5";
-            label5.Size = new Size(115, 20);
-            label5.TabIndex = 3;
-            label5.Text = "Số người tối đa:";
-            // 
-            // textBox1
-            // 
-            textBox1.BorderStyle = BorderStyle.FixedSingle;
-            textBox1.Location = new Point(96, 71);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(198, 27);
-            textBox1.TabIndex = 4;
-            // 
-            // textBox2
-            // 
-            textBox2.BorderStyle = BorderStyle.FixedSingle;
-            textBox2.Location = new Point(96, 152);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.ScrollBars = ScrollBars.Vertical;
-            textBox2.Size = new Size(200, 60);
-            textBox2.TabIndex = 5;
-            // 
-            // textBox3
-            // 
-            textBox3.BorderStyle = BorderStyle.FixedSingle;
-            textBox3.Location = new Point(469, 71);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(200, 27);
-            textBox3.TabIndex = 6;
-            // 
-            // textBox4
-            // 
-            textBox4.BorderStyle = BorderStyle.FixedSingle;
-            textBox4.Location = new Point(467, 158);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(202, 27);
-            textBox4.TabIndex = 7;
             // 
             // textBox5
             // 
@@ -539,14 +440,113 @@
             button5.Text = "Thêm";
             button5.UseVisualStyleBackColor = false;
             // 
-            // dgvListLoaiPhong
+            // panel4
             // 
-            dgvListLoaiPhong.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvListLoaiPhong.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvListLoaiPhong.Location = new Point(13, 24);
-            dgvListLoaiPhong.Name = "dgvListLoaiPhong";
-            dgvListLoaiPhong.Size = new Size(1045, 251);
-            dgvListLoaiPhong.TabIndex = 0;
+            panel4.BackColor = Color.White;
+            panel4.Controls.Add(groupBox2);
+            panel4.Location = new Point(4, 5);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(805, 266);
+            panel4.TabIndex = 0;
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(textBox4);
+            groupBox2.Controls.Add(textBox3);
+            groupBox2.Controls.Add(textBox2);
+            groupBox2.Controls.Add(textBox1);
+            groupBox2.Controls.Add(label5);
+            groupBox2.Controls.Add(label4);
+            groupBox2.Controls.Add(label2);
+            groupBox2.Controls.Add(label1);
+            groupBox2.Font = new Font("Segoe UI", 11F);
+            groupBox2.Location = new Point(10, 5);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(776, 247);
+            groupBox2.TabIndex = 0;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Thông tin loại phòng";
+            // 
+            // textBox4
+            // 
+            textBox4.BorderStyle = BorderStyle.FixedSingle;
+            textBox4.Location = new Point(467, 158);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(202, 27);
+            textBox4.TabIndex = 7;
+            // 
+            // textBox3
+            // 
+            textBox3.BorderStyle = BorderStyle.FixedSingle;
+            textBox3.Location = new Point(469, 71);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(200, 27);
+            textBox3.TabIndex = 6;
+            // 
+            // textBox2
+            // 
+            textBox2.BorderStyle = BorderStyle.FixedSingle;
+            textBox2.Location = new Point(96, 152);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.ScrollBars = ScrollBars.Vertical;
+            textBox2.Size = new Size(200, 60);
+            textBox2.TabIndex = 5;
+            // 
+            // textBox1
+            // 
+            textBox1.BorderStyle = BorderStyle.FixedSingle;
+            textBox1.Location = new Point(96, 71);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(198, 27);
+            textBox1.TabIndex = 4;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 11F);
+            label5.Location = new Point(467, 129);
+            label5.Name = "label5";
+            label5.Size = new Size(115, 20);
+            label5.TabIndex = 3;
+            label5.Text = "Số người tối đa:";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 11F);
+            label4.Location = new Point(467, 40);
+            label4.Name = "label4";
+            label4.Size = new Size(81, 20);
+            label4.TabIndex = 2;
+            label4.Text = "Giá phòng:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 11F);
+            label2.Location = new Point(96, 129);
+            label2.Name = "label2";
+            label2.Size = new Size(51, 20);
+            label2.TabIndex = 1;
+            label2.Text = "Mô tả:";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 11F);
+            label1.Location = new Point(96, 40);
+            label1.Name = "label1";
+            label1.Size = new Size(111, 20);
+            label1.TabIndex = 0;
+            label1.Text = "Tên loại phòng:";
+            // 
+            // sqlCommand1
+            // 
+            sqlCommand1.CommandTimeout = 30;
+            sqlCommand1.Connection = null;
+            sqlCommand1.Notification = null;
+            sqlCommand1.Transaction = null;
             // 
             // PhongForm
             // 
@@ -561,7 +561,9 @@
             Text = "PhongForm";
             tabControl1.ResumeLayout(false);
             tabQuanLyPhong.ResumeLayout(false);
-            tabLoaiPhong.ResumeLayout(false);
+            panel3.ResumeLayout(false);
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             panel2.ResumeLayout(false);
             gbListPhong.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgvListPhong).EndInit();
@@ -569,18 +571,16 @@
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             gbNhapPhong.ResumeLayout(false);
             gbNhapPhong.PerformLayout();
-            panel3.ResumeLayout(false);
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            panel4.ResumeLayout(false);
-            panel5.ResumeLayout(false);
+            tabLoaiPhong.ResumeLayout(false);
             panel6.ResumeLayout(false);
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
-            groupBox3.ResumeLayout(false);
-            groupBox3.PerformLayout();
             groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgvListLoaiPhong).EndInit();
+            panel5.ResumeLayout(false);
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
+            panel4.ResumeLayout(false);
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
             ResumeLayout(false);
         }
 

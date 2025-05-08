@@ -224,9 +224,9 @@
             groupBox2.BackColor = Color.White;
             groupBox2.Controls.Add(dgvListNhanVien);
             groupBox2.Font = new Font("Segoe UI", 11F);
-            groupBox2.Location = new Point(11, 15);
+            groupBox2.Location = new Point(11, 17);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(1101, 243);
+            groupBox2.Size = new Size(1101, 241);
             groupBox2.TabIndex = 0;
             groupBox2.TabStop = false;
             groupBox2.Text = "Danh sách nhân viên";
@@ -235,18 +235,18 @@
             // 
             dgvListNhanVien.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvListNhanVien.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvListNhanVien.Location = new Point(6, 26);
+            dgvListNhanVien.Location = new Point(17, 26);
             dgvListNhanVien.Name = "dgvListNhanVien";
-            dgvListNhanVien.Size = new Size(1089, 211);
+            dgvListNhanVien.Size = new Size(1061, 211);
             dgvListNhanVien.TabIndex = 0;
             // 
             // panel1
             // 
             panel1.BackColor = Color.White;
             panel1.Controls.Add(groupBox1);
-            panel1.Location = new Point(0, 6);
+            panel1.Location = new Point(4, 6);
             panel1.Name = "panel1";
-            panel1.Size = new Size(827, 293);
+            panel1.Size = new Size(823, 293);
             panel1.TabIndex = 3;
             // 
             // groupBox1
@@ -266,9 +266,9 @@
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
             groupBox1.Font = new Font("Segoe UI", 12F);
-            groupBox1.Location = new Point(12, 7);
+            groupBox1.Location = new Point(10, 7);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(800, 272);
+            groupBox1.Size = new Size(802, 272);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Thông tin nhân viên";
@@ -408,10 +408,10 @@
             tabPhanQuyenTaiKhoan.Controls.Add(panel5);
             tabPhanQuyenTaiKhoan.Controls.Add(panel4);
             tabPhanQuyenTaiKhoan.Font = new Font("Segoe UI Semibold", 11F);
-            tabPhanQuyenTaiKhoan.Location = new Point(4, 26);
+            tabPhanQuyenTaiKhoan.Location = new Point(4, 24);
             tabPhanQuyenTaiKhoan.Name = "tabPhanQuyenTaiKhoan";
             tabPhanQuyenTaiKhoan.Padding = new Padding(3);
-            tabPhanQuyenTaiKhoan.Size = new Size(1112, 578);
+            tabPhanQuyenTaiKhoan.Size = new Size(1112, 580);
             tabPhanQuyenTaiKhoan.TabIndex = 1;
             tabPhanQuyenTaiKhoan.Text = "Phân quyền tài khoản nhân viên";
             // 
@@ -472,7 +472,7 @@
             panel5.BackColor = Color.White;
             panel5.Controls.Add(groupBox6);
             panel5.Dock = DockStyle.Bottom;
-            panel5.Location = new Point(3, 316);
+            panel5.Location = new Point(3, 318);
             panel5.Name = "panel5";
             panel5.Size = new Size(1106, 259);
             panel5.TabIndex = 1;
