@@ -122,12 +122,12 @@ namespace QuanLyKhachSan_WinForm.Views
         }
 
         private void CreateCharts()
-        {
+        { 
             // PANEL BOTTOM: chứa biểu đồ
             panelBottom = new Panel
             {
                 Dock = DockStyle.Fill,
-                Padding = new Padding(5),
+                Padding = new Padding(10, 170, 10, 10), // Tăng padding cho khoảng cách quanh biểu đồ
                 BackColor = secondaryColor
             };
 
@@ -137,23 +137,30 @@ namespace QuanLyKhachSan_WinForm.Views
                 Dock = DockStyle.Fill,
                 ColumnCount = 2,
                 RowCount = 2,
-                BackColor = Color.Transparent
+                BackColor = Color.Transparent,
+                Margin = new Padding(0)
             };
-
-            // Xác định rõ chiều cao/rộng cho TableLayoutPanel để tránh lỗi
-            tableCharts.Size = new Size(panelBottom.Width - 20, panelBottom.Height - 20);
 
             // Thiết lập style cho các cột và hàng
             tableCharts.ColumnStyles.Clear();
             tableCharts.RowStyles.Clear();
-            tableCharts.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 60));
-            tableCharts.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 40));
-            tableCharts.RowStyles.Add(new RowStyle(SizeType.Percent, 50));
-            tableCharts.RowStyles.Add(new RowStyle(SizeType.Percent, 50));
+
+            // Giảm kích thước từng hàng và cột, tạo khoảng trống
+            tableCharts.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20));
+            tableCharts.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20));
+            tableCharts.RowStyles.Add(new RowStyle(SizeType.Percent, 20));
+            tableCharts.RowStyles.Add(new RowStyle(SizeType.Percent, 20));
+
+            // Có thể thêm các khoảng trống giữa các ô bằng cách chèn thêm Panel rỗng nếu cần
+
+            panelBottom.Controls.Add(tableCharts);
+
+
 
             // Chart 1 - Đường và cột kết hợp
             Panel panelChart1 = CreateChartPanel("Doanh thu theo tháng");
             chartDoanhThu = new Chart { Dock = DockStyle.Fill };
+            panelChart1.Size = new Size(600, 250);
             chartDoanhThu.ChartAreas.Add(new ChartArea("DoanhThuArea"));
             chartDoanhThu.ChartAreas[0].BackColor = Color.White;
             chartDoanhThu.ChartAreas[0].AxisX.MajorGrid.LineColor = Color.FromArgb(220, 220, 220);
@@ -220,7 +227,10 @@ namespace QuanLyKhachSan_WinForm.Views
 
             // Chart 2 - Doughnut
             Panel panelChart2 = CreateChartPanel("Tỷ lệ loại phòng");
+
             chartLoaiPhong = new Chart { Dock = DockStyle.Fill };
+            panelChart2.Size = new Size(200, 150);
+
             chartLoaiPhong.ChartAreas.Add(new ChartArea("LoaiPhongArea")
             {
                 BackColor = Color.White
@@ -260,9 +270,17 @@ namespace QuanLyKhachSan_WinForm.Views
 
             panelChart2.Controls.Add(chartLoaiPhong);
 
+
+
+
+
             // Chart 3 - Line chart for occupancy rate
             Panel panelChart3 = CreateChartPanel("Tỷ lệ lấp đầy theo ngày");
+            
+            ///////////////////////////
+            panelChart3.Size = new Size(400, 250); // Giảm kích thước Panel
             Chart chartOccupancy = new Chart { Dock = DockStyle.Fill };
+
             chartOccupancy.ChartAreas.Add(new ChartArea("OccupancyArea"));
             chartOccupancy.ChartAreas[0].BackColor = Color.White;
             chartOccupancy.ChartAreas[0].AxisX.MajorGrid.LineColor = Color.FromArgb(220, 220, 220);
@@ -272,7 +290,7 @@ namespace QuanLyKhachSan_WinForm.Views
             chartOccupancy.ChartAreas[0].AxisX.LineColor = Color.FromArgb(220, 220, 220);
             chartOccupancy.ChartAreas[0].AxisY.LineColor = Color.FromArgb(220, 220, 220);
             chartOccupancy.ChartAreas[0].AxisY.Maximum = 100;
-            chartOccupancy.ChartAreas[0].AxisY.Title = "Phần trăm (%)";
+            chartOccupancy.ChartAreas[0].AxisX.Title = "Phần trăm(%)";
             chartOccupancy.ChartAreas[0].AxisY.TitleFont = new Font("Segoe UI", 10F);
 
             Series seriesArea = new Series("Tỷ lệ lấp đầy")
